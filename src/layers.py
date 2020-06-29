@@ -16,16 +16,16 @@ def get_layer_uid(layer_name=''):
 
 def sparse_dropout(x, keep_prob, noise_shape):
     random_tensor = keep_prob
-    random_tensor += tf.random_uniform([noise_shape], dtype=tf.float64)
+    random_tensor += tf.random.uniform([noise_shape], dtype=tf.float64)
     dropout_mask = tf.cast(tf.floor(random_tensor), dtype=tf.bool)
-    res = tf.sparse_retain(x, dropout_mask)
+    res = tf.sparse.retain(x, dropout_mask)
     res /= keep_prob
     return res
 
 
 def dot(x, y, sparse):
     if sparse:
-        res = tf.sparse_tensor_dense_matmul(x, y)
+        res = tf.sparse.sparse_dense_matmul(x, y)
     else:
         res = tf.matmul(x, y)
     return res
@@ -56,7 +56,7 @@ class GCNLayer(Layer):
         self.sparse = sparse
         self.feature_nnz = feature_nnz
         self.act = act
-        with tf.variable_scope(self.name):
+        with tf.compat.v1.variable_scope(self.name):
             self.weights = glorot([input_dim, output_dim], name='weight')
             self.vars = [self.weights]
 

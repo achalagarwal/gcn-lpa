@@ -4,10 +4,11 @@ import tensorflow as tf
 from time import time
 from data_loader import load_data, load_npz, load_random
 from train import train
+tf.compat.v1.disable_eager_execution()
 
 seed = 234
 np.random.seed(seed)
-tf.set_random_seed(seed)
+tf.compat.v1.set_random_seed(seed)
 
 parser = argparse.ArgumentParser()
 

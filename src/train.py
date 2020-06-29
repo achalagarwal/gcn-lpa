@@ -36,8 +36,8 @@ def train(args, data, batch_test=False):
         feed_dict = {model.label_mask: mask, model.dropout: dropout}
         return feed_dict
 
-    with tf.Session() as sess:
-        sess.run(tf.global_variables_initializer())
+    with tf.compat.v1.Session() as sess:
+        sess.run(tf.compat.v1.global_variables_initializer())
 
         best_val_acc = 0
         final_test_acc = 0

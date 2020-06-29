@@ -17,13 +17,13 @@ class GCN_LPA(object):
     def _build_inputs(self, features, labels):
         self.features = tf.SparseTensor(*features)
         self.labels = tf.constant(labels, dtype=tf.float64)
-        self.label_mask = tf.placeholder(tf.float64, shape=labels.shape[0])
-        self.dropout = tf.placeholder(tf.float64)
+        self.label_mask = tf.compat.v1.placeholder(tf.float64, shape=labels.shape[0])
+        self.dropout = tf.compat.v1.placeholder(tf.float64)
 
     def _build_edges(self, adj):
         edge_weights = glorot(shape=[adj[0].shape[0]])
         self.adj = tf.SparseTensor(adj[0], edge_weights, adj[2])
-        self.normalized_adj = tf.sparse_softmax(self.adj)
+        self.normalized_adj = tf.sparse.softmax(self.adj)
         self.vars.append(edge_weights)
 
     def _build_gcn(self, feature_dim, label_dim, feature_nnz):
@@ -68,11 +68,11 @@ class GCN_LPA(object):
 
     def _build_train(self):
         # GCN loss
-        self.loss = tf.nn.softmax_cross_entropy_with_logits_v2(logits=self.outputs, labels=self.labels)
+        self.loss = tf.compat.v1.nn.softmax_cross_entropy_with_logits_v2(logits=self.outputs, labels=self.labels)
         self.loss = tf.reduce_sum(self.loss * self.label_mask) / tf.reduce_sum(self.label_mask)
 
         # LPA loss
-        lpa_loss = tf.nn.softmax_cross_entropy_with_logits_v2(logits=self.predicted_label, labels=self.labels)
+        lpa_loss = tf.compat.v1.nn.softmax_cross_entropy_with_logits_v2(logits=self.predicted_label, labels=self.labels)
         lpa_loss = tf.reduce_sum(lpa_loss * self.label_mask) / tf.reduce_sum(self.label_mask)
         self.loss += self.args.lpa_weight * lpa_loss
 
@@ -80,7 +80,7 @@ class GCN_LPA(object):
         for var in self.vars:
             self.loss += self.args.l2_weight * tf.nn.l2_loss(var)
 
-        self.optimizer = tf.train.AdamOptimizer(learning_rate=self.args.lr).minimize(self.loss)
+        self.optimizer = tf.compat.v1.train.AdamOptimizer(learning_rate=self.args.lr).minimize(self.loss)
 
     def _build_eval(self):
         correct_prediction = tf.equal(tf.argmax(self.outputs, 1), tf.argmax(self.labels, 1))
