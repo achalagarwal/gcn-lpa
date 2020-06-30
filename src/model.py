@@ -23,6 +23,8 @@ class GCN_LPA(object):
     def _build_edges(self, adj):
         edge_weights = glorot(shape=[adj[0].shape[0]])
         self.adj = tf.SparseTensor(adj[0], edge_weights, adj[2])
+        # self.adj_ = tf.sparse_to_dense(self.adj)
+        # self.adj = tf.print(self.adj_.values, [self.adj_])
         self.normalized_adj = tf.sparse_softmax(self.adj)
         self.vars.append(edge_weights)
 
@@ -61,7 +63,8 @@ class GCN_LPA(object):
         label_list = [input_labels]
 
         for _ in range(self.args.lpa_iter):
-            lp_layer = LPALayer(adj=self.normalized_adj)
+            # lp_layer = LPALayer(adj=self.normalized_adj)
+            lp_layer = LPALayer(adj=self.adj)
             hidden = lp_layer(label_list[-1])
             label_list.append(hidden)
         self.predicted_label = label_list[-1]
@@ -73,7 +76,7 @@ class GCN_LPA(object):
 
         # LPA loss
         lpa_loss = tf.nn.softmax_cross_entropy_with_logits_v2(logits=self.predicted_label, labels=self.labels)
-        lpa_loss = tf.reduce_sum(lpa_loss * self.label_mask) / tf.reduce_sum(self.label_mask)
+        lpa_loss = tf.reduce_sum(tf.cast(lpa_loss, tf.float64) * self.label_mask) / tf.reduce_sum(self.label_mask)
         self.loss += self.args.lpa_weight * lpa_loss
 
         # L2 loss
