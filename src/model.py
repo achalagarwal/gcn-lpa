@@ -5,6 +5,7 @@ from inits import *
 class GCN_LPA(object):
     def __init__(self, args, features, labels, adj):
         self.args = args
+        self.per_node_lambdas = glorot(shape=(labels.shape[0],1))
         self.vars = []  # for computing l2 loss
 
         self._build_inputs(features, labels)
@@ -16,7 +17,7 @@ class GCN_LPA(object):
 
     def _build_inputs(self, features, labels):
         self.features = tf.SparseTensor(*features)
-        self.labels = tf.constant(labels, dtype=tf.float64)
+        self.labels = tf.constant(labels, dtype=tf.int32)
         self.label_mask = tf.placeholder(tf.float64, shape=labels.shape[0])
         self.dropout = tf.placeholder(tf.float64)
 
@@ -26,7 +27,7 @@ class GCN_LPA(object):
         # self.adj_ = tf.sparse_to_dense(self.adj)
         # self.adj = tf.print(self.adj_.values, [self.adj_])
         self.normalized_adj = tf.sparse_softmax(self.adj)
-        self.vars.append(edge_weights)
+        # self.vars.append(edge_weights)
 
     def _build_gcn(self, feature_dim, label_dim, feature_nnz):
         hidden_list = []
@@ -53,13 +54,15 @@ class GCN_LPA(object):
             gcn_layer = GCNLayer(input_dim=self.args.dim, output_dim=label_dim, adj=self.normalized_adj,
                                  dropout=self.dropout, act=lambda x: x)
             self.outputs = gcn_layer(hidden_list[-1])
+            self.outputs = self.outputs * self.per_node_lambdas
+            # print(self.outputs.shape)
             self.vars.extend(gcn_layer.vars)
 
         self.prediction = tf.nn.softmax(self.outputs, axis=-1)
 
     def _build_lpa(self):
         label_mask = tf.expand_dims(self.label_mask, -1)
-        input_labels = label_mask * self.labels
+        input_labels = tf.cast(label_mask, dtype=tf.int32) * self.labels
         label_list = [input_labels]
 
         for _ in range(self.args.lpa_iter):
@@ -68,16 +71,22 @@ class GCN_LPA(object):
             hidden = lp_layer(label_list[-1])
             label_list.append(hidden)
         self.predicted_label = label_list[-1]
-
+        self.predicted_label = tf.cast(self.predicted_label, dtype=tf.float64) * (1- self.per_node_lambdas)
     def _build_train(self):
         # GCN loss
+
+        self.label_mask = tf.cast(self.label_mask, dtype=tf.float64)
         self.loss = tf.nn.softmax_cross_entropy_with_logits_v2(logits=self.outputs, labels=self.labels)
         self.loss = tf.reduce_sum(self.loss * self.label_mask) / tf.reduce_sum(self.label_mask)
-
+        # self.loss = self.loss * self.per_node_lambdas
+        
         # LPA loss
         lpa_loss = tf.nn.softmax_cross_entropy_with_logits_v2(logits=self.predicted_label, labels=self.labels)
         lpa_loss = tf.reduce_sum(tf.cast(lpa_loss, tf.float64) * self.label_mask) / tf.reduce_sum(self.label_mask)
-        self.loss += self.args.lpa_weight * lpa_loss
+        self.loss +=  lpa_loss
+        # one parameter for every node
+        # add the lambda and 1-lambda multiplication factor to each loss
+        #  
 
         # L2 loss
         for var in self.vars:

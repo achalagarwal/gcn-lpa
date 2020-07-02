@@ -26,7 +26,7 @@ def print_statistics(features, labels, adj):
 
 def train(args, data, batch_test=False):
     features, labels, adj, train_mask, val_mask, test_mask = [data[i] for i in range(6)]
-
+    labels = labels.astype(np.int32)
     # uncomment the next line if you want to print statistics of the current dataset
     # print_statistics(features, labels, adj)
 

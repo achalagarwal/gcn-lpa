@@ -89,50 +89,51 @@ class LPALayer(Layer):
         # arg max on the counts
         # this is the map for each element of the intermediate adj matrix
         # so the adj matrix gets compressed to a ?x1 tensor which is then returned
-
-        return mapper(self.adj, inputs)
+        with tf.device('/cpu:0'):
+            return mapper(self.adj, inputs)
         # output = dot(self.adj, inputs, sparse=True)
         # return output
 
-def mapper(adj, labels):
-    
-    print(adj.shape)
-    print(labels.shape)
-    # this function has to return the new labels
-
-    # create a new matrix of the same size as adj but with the indices instead of edge labels
-    # what if its -1?
-
-    adj_dense = tf.sparse.to_dense(adj)
-    adj_dense = tf.cast(adj_dense, dtype=tf.int64)
-    labels = tf.cast(labels, dtype=tf.float32)
-
-    # adj_cols = tf.expand_dims(tf.range(tf.shape(adj_dense[0])[0], dtype=tf.int32), 1)
-    adj_cols = tf.range(tf.shape(adj_dense[0])[0], dtype=tf.int32)
-    
-
-
-    # this function has to map each element of the dense adj matrix to the corresponding label
-    # in the labels matrix
-    def _mapper():
+with tf.device('/cpu:0'):
+    def mapper(adj, labels):
         
-        def _element_wise_map(row):
+        print(adj.shape)
+        print(labels.shape)
+        # this function has to return the new labels
+
+        # create a new matrix of the same size as adj but with the indices instead of edge labels
+        # what if its -1?
+
+        adj_dense = tf.sparse.to_dense(adj)
+        adj_dense = tf.cast(adj_dense, dtype=tf.int64)
+        labels = tf.cast(labels, dtype=tf.float32)
+
+        # adj_cols = tf.expand_dims(tf.range(tf.shape(adj_dense[0])[0], dtype=tf.int32), 1)
+        adj_cols = tf.range(tf.shape(adj_dense[0])[0], dtype=tf.int32)
+        
+
+
+        # this function has to map each element of the dense adj matrix to the corresponding label
+        # in the labels matrix
+        def _mapper():
             
-            # print(row.shape)
-            # adj_cols is the index map i.e. enumerate
-            return tf.map_fn(lambda x: tf.cast(tf.argmax(labels[x[1]]) * x[0], dtype=tf.int32),(row, adj_cols), dtype=tf.int32)
+            def _element_wise_map(row):
+                
+                # print(row.shape)
+                # adj_cols is the index map i.e. enumerate
+                return tf.map_fn(lambda x: tf.cast(tf.argmax(labels[x[1]]) * x[0], dtype=tf.int32),(row, adj_cols), dtype=tf.int32)
 
-        return _element_wise_map
+            return _element_wise_map
 
-    def util_map(label_row):
-        # print(label_row.shape)
-        lr = tf.unique_with_counts(label_row)
-    
-        return tf.cast(lr.y[tf.argmax(lr.count)], dtype=tf.int32)
+        def util_map(label_row):
+            # print(label_row.shape)
+            lr = tf.unique_with_counts(label_row)
+        
+            return tf.cast(lr.y[tf.argmax(lr.count)], dtype=tf.int32)
 
-    # so mapper is going to return the label adjacency matrix
-    fn = _mapper()
-    
-    new_labels = tf.map_fn(lambda row: util_map(fn(row)), adj_dense, dtype=tf.int32)
+        # so mapper is going to return the label adjacency matrix
+        fn = _mapper()
+        
+        new_labels = tf.map_fn(lambda row: util_map(fn(row)), adj_dense, dtype=tf.int32)
 
-    return tf.one_hot(new_labels, 6)
+        return tf.one_hot(new_labels, 6)
