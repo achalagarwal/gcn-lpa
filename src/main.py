@@ -127,7 +127,17 @@ for ele in adj[0]:
 
 adj = (adj[0][filter_indices], adj[1][filter_indices], (100,100))
  
-data = [features, labels, adj, train_mask, val_mask, test_mask]
+filter_indices = []
+# new_adj_
+for ele in features[0]:
+    if ele[0] < 100:
+        filter_indices.append(True)
+    else:
+        filter_indices.append(False)
+
+features = (features[0][filter_indices], features[1][filter_indices], (100,3703))
+
+# data = [features, labels, adj, train_mask, val_mask, test_mask]
 
 # print(features.shape)
 # print(labels)

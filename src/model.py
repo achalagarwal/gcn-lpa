@@ -54,7 +54,12 @@ class GCN_LPA(object):
             gcn_layer = GCNLayer(input_dim=self.args.dim, output_dim=label_dim, adj=self.normalized_adj,
                                  dropout=self.dropout, act=lambda x: x)
             self.outputs = gcn_layer(hidden_list[-1])
+            # self.per_node_lambdas = tf.Print(self.per_node_lambdas, [self.per_node_lambdas], message="per node lambdas",summarize=100 )
+            self.per_node_lambdas = tf.clip_by_value(self.per_node_lambdas,-1,1)
+            self.vars.append(self.per_node_lambdas)
+            # self.per_node_lambdas = tf.Print(self.per_node_lambdas, [self.per_node_lambdas], message="per node lambdas after clipping",summarize=100 )
             self.outputs = self.outputs * self.per_node_lambdas
+            
             # print(self.outputs.shape)
             self.vars.extend(gcn_layer.vars)
 
@@ -84,6 +89,8 @@ class GCN_LPA(object):
         lpa_loss = tf.nn.softmax_cross_entropy_with_logits_v2(logits=self.predicted_label, labels=self.labels)
         lpa_loss = tf.reduce_sum(tf.cast(lpa_loss, tf.float64) * self.label_mask) / tf.reduce_sum(self.label_mask)
         self.loss +=  lpa_loss
+
+        
         # one parameter for every node
         # add the lambda and 1-lambda multiplication factor to each loss
         #  

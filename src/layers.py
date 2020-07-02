@@ -61,9 +61,15 @@ class GCNLayer(Layer):
             self.vars = [self.weights]
 
     def _call(self, inputs):
+        print("_call function print statements")
+        print(inputs.shape)
         x = inputs
         x = sparse_dropout(x, 1 - self.dropout, self.feature_nnz) if self.sparse else tf.nn.dropout(x, 1 - self.dropout)
         x = dot(x, self.weights, sparse=self.sparse)
+        print(x.shape)
+        print(self.weights.shape)
+        print(inputs.shape)
+        # print(self)
         x = dot(self.adj, x, sparse=True)
         return self.act(x)
 
@@ -121,7 +127,7 @@ with tf.device('/cpu:0'):
                 
                 # print(row.shape)
                 # adj_cols is the index map i.e. enumerate
-                return tf.map_fn(lambda x: tf.cast(tf.argmax(labels[x[1]]) * x[0], dtype=tf.int32),(row, adj_cols), dtype=tf.int32)
+                return tf.map_fn(lambda x: tf.cast(tf.argmax(labels[x[1]]) * x[0], dtype=tf.int32),(row, adj_cols), dtype=tf.int32,parallel_iterations=1)
 
             return _element_wise_map
 
@@ -134,6 +140,6 @@ with tf.device('/cpu:0'):
         # so mapper is going to return the label adjacency matrix
         fn = _mapper()
         
-        new_labels = tf.map_fn(lambda row: util_map(fn(row)), adj_dense, dtype=tf.int32)
+        new_labels = tf.map_fn(lambda row: util_map(fn(row)), adj_dense, dtype=tf.int32, parallel_iterations=60)
 
         return tf.one_hot(new_labels, 6)
