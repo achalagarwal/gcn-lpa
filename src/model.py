@@ -5,6 +5,8 @@ from inits import *
 class GCN_LPA(object):
     def __init__(self, args, features, labels, adj):
         self.args = args
+        # TODO
+        # initialise the per_node lambdas with something small
         self.per_node_lambdas = glorot(shape=(labels.shape[0],1))
         self.vars = []  # for computing l2 loss
 
@@ -55,8 +57,18 @@ class GCN_LPA(object):
                                  dropout=self.dropout, act=lambda x: x)
             self.outputs = gcn_layer(hidden_list[-1])
             # self.per_node_lambdas = tf.Print(self.per_node_lambdas, [self.per_node_lambdas], message="per node lambdas",summarize=100 )
+            # TODO
+            # the per node lampdas do get trained, so it might not be smart to use a clip on them
+            # how about a differentiable function?
             self.per_node_lambdas = tf.clip_by_value(self.per_node_lambdas,-1,1)
             self.vars.append(self.per_node_lambdas)
+            # self.outputs = tf.Print(self.outputs, [self.outputs], message=" print outputs labels ",summarize=100 )
+            # TODO
+            # argmax is not differentiable, does this affect the flow of training?
+
+            self.outputs_maxed = tf.argmax(self.outputs, axis=-1)
+            self.outputs_maxed = tf.one_hot(self.outputs_maxed, 6)
+            # self.outputs_maxed = tf.Print(self.outputs_maxed, [self.outputs_maxed], message=" print outputs maxed labels ",summarize=100 )
             # self.per_node_lambdas = tf.Print(self.per_node_lambdas, [self.per_node_lambdas], message="per node lambdas after clipping",summarize=100 )
             self.outputs = self.outputs * self.per_node_lambdas
             
@@ -68,7 +80,9 @@ class GCN_LPA(object):
     def _build_lpa(self):
         label_mask = tf.expand_dims(self.label_mask, -1)
         input_labels = tf.cast(label_mask, dtype=tf.int32) * self.labels
-        label_list = [input_labels]
+        # input_labels = tf.Print(input_labels, [input_labels], message=" print input labels ",summarize=100 )
+        label_list = [self.outputs_maxed]
+        # label_list = [input_labels]
 
         for _ in range(self.args.lpa_iter):
             # lp_layer = LPALayer(adj=self.normalized_adj)
