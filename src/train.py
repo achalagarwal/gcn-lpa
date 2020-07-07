@@ -1,7 +1,7 @@
 import numpy as np
 import tensorflow as tf
 from model import GCN_LPA
-
+import pickle
 
 def print_statistics(features, labels, adj):
     n_nodes = features[2][0]
@@ -41,10 +41,18 @@ def train(args, data, batch_test=False):
 
         best_val_acc = 0
         final_test_acc = 0
+        lpa_labels, gcn_labels, lambdaz = [], [], []
+
         for epoch in range(args.epochs):
             # train
-            _, train_loss, train_acc = sess.run(
-                [model.optimizer, model.loss, model.accuracy], feed_dict=get_feed_dict(train_mask, args.dropout))
+            # _, train_loss, train_acc = sess.run(
+            #     [model.optimizer, model.loss, model.accuracy,], feed_dict=get_feed_dict(train_mask, args.dropout))
+            _, train_loss, train_acc, lpa_label, gcn_label, lambdas  = sess.run(
+                [model.optimizer, model.loss, model.accuracy,model.predicted_label, model.outputs, model.per_node_lambdas], feed_dict=get_feed_dict(train_mask, args.dropout))
+            
+            lpa_labels.append(lpa_label)
+            gcn_labels.append(gcn_label)
+            lambdaz.append(lambdas)
 
             # validation
             val_loss, val_acc = sess.run([model.loss, model.accuracy], feed_dict=get_feed_dict(val_mask, 0.0))
@@ -64,3 +72,9 @@ def train(args, data, batch_test=False):
             print('final test acc: %.4f' % final_test_acc)
         else:
             return final_test_acc
+        
+        # pickle the three lists 
+        filename = './data_stored'
+        fileObject = open(filename, 'wb')
+        pickle.dump((lpa_labels,gcn_labels,lambdaz), fileObject)
+        fileObject.close()

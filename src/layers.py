@@ -103,8 +103,8 @@ class LPALayer(Layer):
 with tf.device('/cpu:0'):
     def mapper(adj, labels):
         
-        print(adj.shape)
-        print(labels.shape)
+        # print(adj.shape)
+        # print(labels.shape)
         # this function has to return the new labels
 
         # create a new matrix of the same size as adj but with the indices instead of edge labels
@@ -117,6 +117,9 @@ with tf.device('/cpu:0'):
         # adj_cols = tf.expand_dims(tf.range(tf.shape(adj_dense[0])[0], dtype=tf.int32), 1)
         adj_cols = tf.range(tf.shape(adj_dense[0])[0], dtype=tf.int32)
         
+        # adj_dense = tf.Print(adj_dense, [adj_dense], "adj_dense initial\n", summarize=100)
+        # adj_cols = tf.Print(adj_cols, [adj_cols], "adj_cols initial\n", summarize=100)
+        # labels = tf.Print(labels, [labels], "labels initial\n", summarize=100)
 
 
         # this function has to map each element of the dense adj matrix to the corresponding label
@@ -127,19 +130,28 @@ with tf.device('/cpu:0'):
                 
                 # print(row.shape)
                 # adj_cols is the index map i.e. enumerate
-                return tf.map_fn(lambda x: tf.cast(tf.argmax(labels[x[1]]) * x[0], dtype=tf.int32),(row, adj_cols), dtype=tf.int32,parallel_iterations=1)
+                # print("this is the row where -1 and 0 needs to be checked", row)
+                # row = tf.Print(row,[row], "row tensor", summarize=100)
+                bit = tf.constant(1, dtype=tf.int64)
+                
+                # return tf.map_fn(lambda x: tf.cast(tf.argmax(labels[x[1]]) * x[0] if (x[0] > 0)  else -1, dtype=tf.int32),(row_, adj_cols), dtype=tf.int32,parallel_iterations=1)
+                return tf.map_fn(lambda x: tf.cond(x[0] < bit, lambda: -1, lambda x=x: tf.cast(tf.argmax(labels[x[1]]) * x[0], dtype=tf.int32)),(row, adj_cols), dtype=tf.int32,parallel_iterations=1)
 
             return _element_wise_map
 
         def util_map(label_row):
             # print(label_row.shape)
-            lr = tf.unique_with_counts(label_row)
-        
-            return tf.cast(lr.y[tf.argmax(lr.count)], dtype=tf.int32)
+            # label_row = tf.Print(label_row, [label_row], "\n printing label row: ", summarize=100)
+            y, idx, count = tf.unique_with_counts( tf.boolean_mask(label_row, tf.math.not_equal(label_row,-1)))
+            # y = tf.Print(y, [y], "y -- unique with counts", summarize=100)
+            # count = tf.Print(count, [count], "count -- unique with counts", summarize=100)   
+            return tf.cast(y[tf.argmax(count)], dtype=tf.int32)
 
         # so mapper is going to return the label adjacency matrix
         fn = _mapper()
         
         new_labels = tf.map_fn(lambda row: util_map(fn(row)), adj_dense, dtype=tf.int32, parallel_iterations=60)
+
+        # new_labels = tf.Print(new_labels, [new_labels], "new labels before one_hot", summarize=100)
 
         return tf.one_hot(new_labels, 6)

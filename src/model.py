@@ -60,7 +60,7 @@ class GCN_LPA(object):
             # TODO
             # the per node lampdas do get trained, so it might not be smart to use a clip on them
             # how about a differentiable function?
-            self.per_node_lambdas = tf.clip_by_value(self.per_node_lambdas,-1,1)
+            # self.per_node_lambdas = tf.clip_by_value(self.per_node_lambdas,-1,1)
             self.vars.append(self.per_node_lambdas)
             # self.outputs = tf.Print(self.outputs, [self.outputs], message=" print outputs labels ",summarize=100 )
             # TODO
