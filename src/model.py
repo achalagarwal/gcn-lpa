@@ -7,7 +7,8 @@ class GCN_LPA(object):
         self.args = args
         # TODO
         # initialise the per_node lambdas with something small
-        self.per_node_lambdas = glorot(shape=(labels.shape[0],1))
+        # self.per_node_lambdas = glorot(shape=(labels.shape[0],1))
+        self.per_node_lambdas = tf.Variable(tf.ones((labels.shape[0],1)))
         self.vars = []  # for computing l2 loss
 
         self._build_inputs(features, labels)
@@ -68,7 +69,7 @@ class GCN_LPA(object):
             # the per node lampdas do get trained, so it might not be smart to use a clip on them
             # how about a differentiable function?
             # self.per_node_lambdas = tf.clip_by_value(self.per_node_lambdas,-1,1)
-            self.vars.append(self.per_node_lambdas)
+            # self.vars.append(self.per_node_lambdas)
             # self.outputs = tf.Print(self.outputs, [self.outputs], message=" print outputs labels ",summarize=100 )
             # TODO
             # argmax is not differentiable, does this affect the flow of training?
