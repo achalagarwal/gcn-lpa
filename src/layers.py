@@ -145,6 +145,7 @@ with tf.device('/cpu:0'):
             y, idx, count = tf.unique_with_counts( tf.boolean_mask(label_row, tf.math.not_equal(label_row,-1)))
             # y = tf.Print(y, [y], "y -- unique with counts", summarize=100)
             # count = tf.Print(count, [count], "count -- unique with counts", summarize=100)   
+
             return tf.cast(y[tf.argmax(count)], dtype=tf.int32)
 
         # so mapper is going to return the label adjacency matrix
@@ -153,5 +154,5 @@ with tf.device('/cpu:0'):
         new_labels = tf.map_fn(lambda row: util_map(fn(row)), adj_dense, dtype=tf.int32, parallel_iterations=60)
 
         # new_labels = tf.Print(new_labels, [new_labels], "new labels before one_hot", summarize=100)
-
+        
         return tf.one_hot(new_labels, 6)

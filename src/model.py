@@ -26,9 +26,16 @@ class GCN_LPA(object):
     def _build_edges(self, adj):
         edge_weights = glorot(shape=[adj[0].shape[0]])
         self.adj = tf.SparseTensor(adj[0], edge_weights, adj[2])
+        # self.adj = tf.sparse_tensor_to_dense(self.adj)
+        # self.adj = tf.Print(self.adj, [self.adj.indices], "adj graph", summarize=200)
+
+        # self.adj = tf.SparseTensor()
         # self.adj_ = tf.sparse_to_dense(self.adj)
         # self.adj = tf.print(self.adj_.values, [self.adj_])
         self.normalized_adj = tf.sparse_softmax(self.adj)
+        self.adj =  tf.SparseTensor(adj[0], adj[1], adj[2])
+        # tf.debugging.assert_non_positive(self.normalized_adj)
+
         # self.vars.append(edge_weights)
 
     def _build_gcn(self, feature_dim, label_dim, feature_nnz):
@@ -104,6 +111,7 @@ class GCN_LPA(object):
         lpa_loss = tf.reduce_sum(tf.cast(lpa_loss, tf.float64) * self.label_mask) / tf.reduce_sum(self.label_mask)
         self.loss +=  lpa_loss
 
+        self.moment = tf.nn.moments(self.per_node_lambdas, [0])
         
         # one parameter for every node
         # add the lambda and 1-lambda multiplication factor to each loss
@@ -113,6 +121,7 @@ class GCN_LPA(object):
         for var in self.vars:
             self.loss += self.args.l2_weight * tf.nn.l2_loss(var)
 
+        tf.summary.histogram("per_node_lambdas", self.per_node_lambdas)
         self.optimizer = tf.train.AdamOptimizer(learning_rate=self.args.lr).minimize(self.loss)
 
     def _build_eval(self):

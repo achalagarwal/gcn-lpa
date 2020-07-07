@@ -31,7 +31,6 @@ def train(args, data, batch_test=False):
     # print_statistics(features, labels, adj)
 
     model = GCN_LPA(args, features, labels, adj)
-
     def get_feed_dict(mask, dropout):
         feed_dict = {model.label_mask: mask, model.dropout: dropout}
         return feed_dict
@@ -42,14 +41,21 @@ def train(args, data, batch_test=False):
         best_val_acc = 0
         final_test_acc = 0
         lpa_labels, gcn_labels, lambdaz = [], [], []
+        train_writer = tf.summary.FileWriter( './../logs/train ', sess.graph)
 
         for epoch in range(args.epochs):
             # train
             # _, train_loss, train_acc = sess.run(
             #     [model.optimizer, model.loss, model.accuracy,], feed_dict=get_feed_dict(train_mask, args.dropout))
-            _, train_loss, train_acc, lpa_label, gcn_label, lambdas  = sess.run(
-                [model.optimizer, model.loss, model.accuracy,model.predicted_label, model.outputs, model.per_node_lambdas], feed_dict=get_feed_dict(train_mask, args.dropout))
+            merge = tf.summary.merge_all()
+
+
+            summary,_, train_loss, train_acc, lpa_label, gcn_label, lambdas, moments  = sess.run(
+                [merge, model.optimizer, model.loss, model.accuracy,model.predicted_label, model.outputs, model.per_node_lambdas, model.moment], feed_dict=get_feed_dict(train_mask, args.dropout))
             
+            train_writer.add_summary(summary, epoch)
+
+            print(moments)
             lpa_labels.append(lpa_label)
             gcn_labels.append(gcn_label)
             lambdaz.append(lambdas)
