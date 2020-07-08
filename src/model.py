@@ -122,7 +122,7 @@ class GCN_LPA(object):
         # self.per_node_lambdas_1 = tf.Print(self.per_node_lambdas_1, [self.per_node_lambdas_1], message="per node lambdas after the update", summarize=200)
 
         # this is where the per_node lambdas get appended
-        # self.vars.append(self.per_node_lambdas_1)
+        self.vars.append(self.per_node_lambdas_1)
 
         self.outputs = self.outputs * self.per_node_lambdas_1
         self.predicted_label = tf.cast(self.predicted_label, dtype=tf.float64) * (1- self.per_node_lambdas_1)
