@@ -2,7 +2,7 @@ import numpy as np
 import tensorflow as tf
 from model import GCN_LPA
 import pickle
-
+import os
 def print_statistics(features, labels, adj):
     n_nodes = features[2][0]
     n_edges = (len(adj[0]) - labels.shape[0]) // 2
@@ -41,7 +41,10 @@ def train(args, data, batch_test=False):
         best_val_acc = 0
         final_test_acc = 0
         lpa_labels, gcn_labels, lambdaz = [], [], []
-        train_writer = tf.summary.FileWriter( './../logs/train_5 ', sess.graph)
+        index = 1
+        while os.path.exists("./../logs/fresh/%s" % index):
+            index += 1
+        train_writer = tf.summary.FileWriter( './../logs/fresh/'+str(index), sess.graph)
 
         for epoch in range(args.epochs):
             # train

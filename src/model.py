@@ -8,7 +8,7 @@ class GCN_LPA(object):
         # TODO
         # initialise the per_node lambdas with something small
         # self.per_node_lambdas = glorot(shape=(labels.shape[0],1))
-        self.per_node_lambdas = tf.Variable(tf.ones((labels.shape[0],1), dtype=tf.float64))
+        self.per_node_lambdas = tf.Variable(tf.zeros((labels.shape[0],1), dtype=tf.float64))
         self.vars = []  # for computing l2 loss
 
         self._build_inputs(features, labels)
@@ -122,7 +122,10 @@ class GCN_LPA(object):
         # self.per_node_lambdas_1 = tf.Print(self.per_node_lambdas_1, [self.per_node_lambdas_1], message="per node lambdas after the update", summarize=200)
 
         # this is where the per_node lambdas get appended
-        self.vars.append(self.per_node_lambdas_1)
+
+        # this should be masked_lambdas as the average would affect the loss
+        # also, maybe it might be better to just clip instead of regualarizing
+        # self.vars.append(tf.reduce_sum(self.masked_lambdas))
 
         self.outputs = self.outputs * self.per_node_lambdas_1
         self.predicted_label = tf.cast(self.predicted_label, dtype=tf.float64) * (1- self.per_node_lambdas_1)
@@ -164,7 +167,7 @@ class GCN_LPA(object):
         self.test_loss += self.reg_loss
         self.ver_loss += self.reg_loss
 
-        tf.summary.histogram("per_node_lambdas", self.per_node_lambdas)
+        tf.summary.histogram("per_node_lambdas", self.per_node_lambdas_1)
 
         # these operations should only take place in the training stage 
         self.optimizer = tf.train.AdamOptimizer(learning_rate=self.args.lr).minimize(self.train_loss)
