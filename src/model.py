@@ -105,8 +105,8 @@ class GCN_LPA(object):
         # GCN loss
 
         self.label_mask_1 = tf.expand_dims(self.label_mask, -1)
+        # self.per_node_lambdas = tf.clip_by_value(self.per_node_lambdas,-1,1)
         self.masked_lambdas = tf.where(self.label_mask > 0, self.per_node_lambdas , tf.zeros_like(self.per_node_lambdas))
-        self.masked_lambdas = tf.clip_by_value(self.masked_lambdas,-1,1)
         self.average_lambda = tf.reduce_sum(self.masked_lambdas) / tf.reduce_sum(self.label_mask)
         # self.masked_lambdas = tf.Print(self.masked_lambdas, [self.masked_lambdas], message="masked lambdas before the condition", summarize=200)
         # self.per_node_lambdas = tf.Print(self.per_node_lambdas, [self.per_node_lambdas], message="per node lambdas before the update", summarize=200)
@@ -126,7 +126,7 @@ class GCN_LPA(object):
 
         # this should be masked_lambdas as the average would affect the loss
         # also, maybe it might be better to just clip instead of regualarizing
-        # self.vars.append(tf.reduce_sum(self.masked_lambdas))
+        self.vars.append(self.per_node_lambdas_1*0.1)
 
         self.outputs = self.outputs * self.per_node_lambdas_1
         self.predicted_label = tf.cast(self.predicted_label, dtype=tf.float64) * (1- self.per_node_lambdas_1)

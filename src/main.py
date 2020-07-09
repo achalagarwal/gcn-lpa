@@ -29,7 +29,7 @@ parser.add_argument('--dataset', type=str, default='citeseer', help='which datas
 parser.add_argument('--epochs', type=int, default=200, help='the number of epochs')
 parser.add_argument('--dim', type=int, default=16, help='dimension of hidden layers')
 parser.add_argument('--gcn_layer', type=int, default=2, help='number of GCN layers')
-parser.add_argument('--lpa_iter', type=int, default=1, help='number of LPA iterations')
+parser.add_argument('--lpa_iter', type=int, default=5, help='number of LPA iterations')
 parser.add_argument('--l2_weight', type=float, default=5e-4, help='weight of l2 regularization')
 parser.add_argument('--lpa_weight', type=float, default=1, help='weight of LP regularization')
 parser.add_argument('--dropout', type=float, default=0, help='dropout rate')
