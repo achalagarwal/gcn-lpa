@@ -106,6 +106,7 @@ class GCN_LPA(object):
 
         self.label_mask_1 = tf.expand_dims(self.label_mask, -1)
         self.masked_lambdas = tf.where(self.label_mask > 0, self.per_node_lambdas , tf.zeros_like(self.per_node_lambdas))
+        self.masked_lambdas = tf.clip_by_value(self.masked_lambdas,-1,1)
         self.average_lambda = tf.reduce_sum(self.masked_lambdas) / tf.reduce_sum(self.label_mask)
         # self.masked_lambdas = tf.Print(self.masked_lambdas, [self.masked_lambdas], message="masked lambdas before the condition", summarize=200)
         # self.per_node_lambdas = tf.Print(self.per_node_lambdas, [self.per_node_lambdas], message="per node lambdas before the update", summarize=200)
