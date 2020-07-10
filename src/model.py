@@ -126,7 +126,7 @@ class GCN_LPA(object):
 
         # this should be masked_lambdas as the average would affect the loss
         # also, maybe it might be better to just clip instead of regualarizing
-        self.vars.append(self.per_node_lambdas_1*0.1)
+        self.vars.append(self.per_node_lambdas_1)
 
         self.outputs = self.outputs * self.per_node_lambdas_1
         self.predicted_label = tf.cast(self.predicted_label, dtype=tf.float64) * (1- self.per_node_lambdas_1)
