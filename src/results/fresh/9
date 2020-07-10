@@ -1,0 +1,201 @@
+epoch 0   train loss: 1.8297  acc: 0.2193   val loss: 1.8416  acc: 0.2180   test loss: 1.8254  acc: 0.2000
+(array([0.1990521]), array([1.84963371e-33]))
+epoch 1   train loss: 2.3205  acc: 0.2148   val loss: 2.3157  acc: 0.1985   test loss: 2.3044  acc: 0.1970
+(array([0.32222979]), array([0.00975591]))
+epoch 2   train loss: 1.8205  acc: 0.2288   val loss: 1.8136  acc: 0.2150   test loss: 1.8243  acc: 0.2165
+(array([0.41218932]), array([0.02749808]))
+epoch 3   train loss: 1.9228  acc: 0.2374   val loss: 1.9314  acc: 0.2271   test loss: 1.9105  acc: 0.2030
+(array([0.49415518]), array([0.05675154]))
+epoch 4   train loss: 2.0819  acc: 0.1768   val loss: 2.0927  acc: 0.2060   test loss: 2.1356  acc: 0.1759
+(array([0.56339015]), array([0.08506379]))
+epoch 5   train loss: 1.9281  acc: 0.2514   val loss: 1.9395  acc: 0.2812   test loss: 1.9716  acc: 0.2496
+(array([0.61880138]), array([0.11285333]))
+epoch 6   train loss: 1.7697  acc: 0.2459   val loss: 1.7719  acc: 0.3398   test loss: 1.7986  acc: 0.3293
+(array([0.65298335]), array([0.13875763]))
+epoch 7   train loss: 1.8046  acc: 0.2303   val loss: 1.7873  acc: 0.2406   test loss: 1.8184  acc: 0.2677
+(array([0.67955069]), array([0.15940457]))
+epoch 8   train loss: 1.8553  acc: 0.1933   val loss: 1.8317  acc: 0.2947   test loss: 1.8753  acc: 0.3188
+(array([0.70540325]), array([0.1710419]))
+epoch 9   train loss: 1.8588  acc: 0.3005   val loss: 1.8334  acc: 0.3444   test loss: 1.8530  acc: 0.3489
+(array([0.74265421]), array([0.17228769]))
+epoch 10   train loss: 1.7799  acc: 0.3796   val loss: 1.7537  acc: 0.3880   test loss: 1.7275  acc: 0.3805
+(array([0.78365761]), array([0.17271367]))
+epoch 11   train loss: 1.6481  acc: 0.5008   val loss: 1.6212  acc: 0.4917   test loss: 1.5627  acc: 0.4962
+(array([0.82150477]), array([0.17949972]))
+epoch 12   train loss: 1.5697  acc: 0.6044   val loss: 1.5478  acc: 0.5639   test loss: 1.4483  acc: 0.5624
+(array([0.8585429]), array([0.19196701]))
+epoch 13   train loss: 1.5635  acc: 0.6329   val loss: 1.5427  acc: 0.5820   test loss: 1.4237  acc: 0.5774
+(array([0.89524085]), array([0.21074241]))
+epoch 14   train loss: 1.5431  acc: 0.6480   val loss: 1.5327  acc: 0.6045   test loss: 1.4061  acc: 0.5880
+(array([0.93531685]), array([0.23333152]))
+epoch 15   train loss: 1.5032  acc: 0.6510   val loss: 1.4971  acc: 0.5970   test loss: 1.3627  acc: 0.5850
+(array([0.98115155]), array([0.257565]))
+epoch 16   train loss: 1.4281  acc: 0.6830   val loss: 1.4286  acc: 0.6241   test loss: 1.2902  acc: 0.5895
+(array([1.03506644]), array([0.27926069]))
+epoch 17   train loss: 1.3844  acc: 0.6730   val loss: 1.3836  acc: 0.6316   test loss: 1.2479  acc: 0.5985
+(array([1.09557541]), array([0.29640628]))
+epoch 18   train loss: 1.3431  acc: 0.7216   val loss: 1.3628  acc: 0.6526   test loss: 1.2256  acc: 0.6286
+(array([1.16313041]), array([0.30935054]))
+epoch 19   train loss: 1.4092  acc: 0.6910   val loss: 1.4065  acc: 0.6256   test loss: 1.2612  acc: 0.6165
+(array([1.22966983]), array([0.32160348]))
+epoch 20   train loss: 1.2999  acc: 0.7586   val loss: 1.3226  acc: 0.7128   test loss: 1.1684  acc: 0.6977
+(array([1.29618005]), array([0.33124579]))
+epoch 21   train loss: 1.2655  acc: 0.8072   val loss: 1.2976  acc: 0.7504   test loss: 1.1225  acc: 0.7173
+(array([1.36455245]), array([0.33642106]))
+epoch 22   train loss: 1.3066  acc: 0.8082   val loss: 1.3139  acc: 0.7248   test loss: 1.0914  acc: 0.7053
+(array([1.43227575]), array([0.33901421]))
+epoch 23   train loss: 1.2176  acc: 0.8508   val loss: 1.2522  acc: 0.7714   test loss: 0.9905  acc: 0.7444
+(array([1.50272358]), array([0.33929152]))
+epoch 24   train loss: 1.2173  acc: 0.8302   val loss: 1.2720  acc: 0.7639   test loss: 0.9961  acc: 0.7444
+(array([1.5750963]), array([0.3354221]))
+epoch 25   train loss: 1.2864  acc: 0.8548   val loss: 1.2950  acc: 0.7579   test loss: 0.9792  acc: 0.7383
+(array([1.64620101]), array([0.33034103]))
+epoch 26   train loss: 1.2435  acc: 0.8798   val loss: 1.2810  acc: 0.7594   test loss: 0.9242  acc: 0.7444
+(array([1.71630278]), array([0.32512207]))
+epoch 27   train loss: 1.2287  acc: 0.8648   val loss: 1.3014  acc: 0.7639   test loss: 0.9235  acc: 0.7308
+(array([1.78403294]), array([0.32085077]))
+epoch 28   train loss: 1.2340  acc: 0.8863   val loss: 1.2782  acc: 0.7669   test loss: 0.8702  acc: 0.7353
+(array([1.85033521]), array([0.31568454]))
+epoch 29   train loss: 1.2553  acc: 0.8773   val loss: 1.3199  acc: 0.7684   test loss: 0.8794  acc: 0.7414
+(array([1.91335924]), array([0.31107689]))
+epoch 30   train loss: 1.2345  acc: 0.8988   val loss: 1.2960  acc: 0.7639   test loss: 0.8458  acc: 0.7414
+(array([1.97541987]), array([0.30443552]))
+epoch 31   train loss: 1.2646  acc: 0.8988   val loss: 1.3164  acc: 0.7624   test loss: 0.8462  acc: 0.7218
+(array([2.03523438]), array([0.29838117]))
+epoch 32   train loss: 1.3011  acc: 0.8958   val loss: 1.3406  acc: 0.7639   test loss: 0.8519  acc: 0.7113
+(array([2.09059005]), array([0.29337457]))
+epoch 33   train loss: 1.2295  acc: 0.8908   val loss: 1.3214  acc: 0.7624   test loss: 0.8229  acc: 0.7203
+(array([2.14202818]), array([0.29002037]))
+epoch 34   train loss: 1.2604  acc: 0.8988   val loss: 1.3052  acc: 0.7534   test loss: 0.8213  acc: 0.7353
+(array([2.19016242]), array([0.28808683]))
+epoch 35   train loss: 1.2425  acc: 0.9099   val loss: 1.3162  acc: 0.7789   test loss: 0.8025  acc: 0.7173
+(array([2.23602212]), array([0.2852196]))
+epoch 36   train loss: 1.2393  acc: 0.9039   val loss: 1.3188  acc: 0.7805   test loss: 0.7956  acc: 0.7248
+(array([2.27776239]), array([0.28564766]))
+epoch 37   train loss: 1.2385  acc: 0.9154   val loss: 1.3299  acc: 0.7684   test loss: 0.7821  acc: 0.7278
+(array([2.31946182]), array([0.28258503]))
+epoch 38   train loss: 1.2581  acc: 0.9159   val loss: 1.3356  acc: 0.7624   test loss: 0.7875  acc: 0.7218
+(array([2.3565415]), array([0.28657081]))
+epoch 39   train loss: 1.2704  acc: 0.9099   val loss: 1.3470  acc: 0.7534   test loss: 0.7841  acc: 0.7218
+(array([2.39219549]), array([0.2898472]))
+epoch 40   train loss: 1.2737  acc: 0.9019   val loss: 1.3424  acc: 0.7414   test loss: 0.7892  acc: 0.7233
+(array([2.42409241]), array([0.2955131]))
+epoch 41   train loss: 1.3405  acc: 0.8873   val loss: 1.3887  acc: 0.7549   test loss: 0.8329  acc: 0.7188
+(array([2.45311581]), array([0.29870415]))
+epoch 42   train loss: 1.2997  acc: 0.9129   val loss: 1.3546  acc: 0.7489   test loss: 0.7825  acc: 0.7188
+(array([2.4781128]), array([0.30590226]))
+epoch 43   train loss: 1.2816  acc: 0.9069   val loss: 1.4006  acc: 0.7744   test loss: 0.8028  acc: 0.7008
+(array([2.50102375]), array([0.31340508]))
+epoch 44   train loss: 1.3952  acc: 0.9029   val loss: 1.4223  acc: 0.7383   test loss: 0.8262  acc: 0.7128
+(array([2.52065593]), array([0.32106878]))
+epoch 45   train loss: 1.2998  acc: 0.9064   val loss: 1.3896  acc: 0.7579   test loss: 0.8111  acc: 0.7173
+(array([2.53841175]), array([0.32674352]))
+epoch 46   train loss: 1.3106  acc: 0.9099   val loss: 1.3962  acc: 0.7323   test loss: 0.8010  acc: 0.7233
+(array([2.55294261]), array([0.33492032]))
+epoch 47   train loss: 1.3246  acc: 0.9204   val loss: 1.3951  acc: 0.7444   test loss: 0.7904  acc: 0.7113
+(array([2.5662625]), array([0.34178298]))
+epoch 48   train loss: 1.2993  acc: 0.9239   val loss: 1.3709  acc: 0.7579   test loss: 0.7729  acc: 0.7263
+(array([2.5779839]), array([0.34918718]))
+epoch 49   train loss: 1.2926  acc: 0.9249   val loss: 1.3520  acc: 0.7519   test loss: 0.7713  acc: 0.7263
+(array([2.58843524]), array([0.35721632]))
+epoch 50   train loss: 1.2577  acc: 0.9244   val loss: 1.3428  acc: 0.7579   test loss: 0.7593  acc: 0.7188
+(array([2.59807452]), array([0.3654883]))
+epoch 51   train loss: 1.2774  acc: 0.9314   val loss: 1.3487  acc: 0.7489   test loss: 0.7648  acc: 0.7143
+(array([2.60661221]), array([0.37602129]))
+epoch 52   train loss: 1.2414  acc: 0.9349   val loss: 1.3216  acc: 0.7609   test loss: 0.7457  acc: 0.7083
+(array([2.61511753]), array([0.38743776]))
+epoch 53   train loss: 1.2421  acc: 0.9214   val loss: 1.3126  acc: 0.7579   test loss: 0.7453  acc: 0.7173
+(array([2.62365266]), array([0.39719349]))
+epoch 54   train loss: 1.2465  acc: 0.9219   val loss: 1.3206  acc: 0.7549   test loss: 0.7450  acc: 0.7353
+(array([2.63077444]), array([0.40912695]))
+epoch 55   train loss: 1.2533  acc: 0.9314   val loss: 1.3158  acc: 0.7534   test loss: 0.7402  acc: 0.7248
+(array([2.63756554]), array([0.42170927]))
+epoch 56   train loss: 1.2272  acc: 0.9294   val loss: 1.3347  acc: 0.7459   test loss: 0.7389  acc: 0.7158
+(array([2.64409707]), array([0.43462698]))
+epoch 57   train loss: 1.2374  acc: 0.9289   val loss: 1.3254  acc: 0.7594   test loss: 0.7313  acc: 0.7218
+(array([2.65085241]), array([0.44737718]))
+epoch 58   train loss: 1.2399  acc: 0.9404   val loss: 1.3087  acc: 0.7579   test loss: 0.7258  acc: 0.7143
+(array([2.65841688]), array([0.46054019]))
+epoch 59   train loss: 1.2087  acc: 0.9254   val loss: 1.2998  acc: 0.7549   test loss: 0.7351  acc: 0.7263
+(array([2.66640191]), array([0.47397617]))
+epoch 60   train loss: 1.2704  acc: 0.9109   val loss: 1.3200  acc: 0.7564   test loss: 0.7558  acc: 0.7188
+(array([2.67320737]), array([0.48747876]))
+epoch 61   train loss: 1.2293  acc: 0.9139   val loss: 1.3231  acc: 0.7504   test loss: 0.7593  acc: 0.7278
+(array([2.67948966]), array([0.50011388]))
+epoch 62   train loss: 1.2445  acc: 0.9249   val loss: 1.3263  acc: 0.7564   test loss: 0.7383  acc: 0.7218
+(array([2.68509674]), array([0.51323046]))
+epoch 63   train loss: 1.2616  acc: 0.9344   val loss: 1.3275  acc: 0.7519   test loss: 0.7253  acc: 0.7218
+(array([2.69043299]), array([0.52698745]))
+epoch 64   train loss: 1.2459  acc: 0.9254   val loss: 1.3279  acc: 0.7549   test loss: 0.7417  acc: 0.7398
+(array([2.69575876]), array([0.54126051]))
+epoch 65   train loss: 1.2557  acc: 0.9444   val loss: 1.3076  acc: 0.7489   test loss: 0.7275  acc: 0.7323
+(array([2.70179811]), array([0.55619601]))
+epoch 66   train loss: 1.2196  acc: 0.9409   val loss: 1.2988  acc: 0.7504   test loss: 0.7201  acc: 0.7368
+(array([2.70856642]), array([0.57228078]))
+epoch 67   train loss: 1.2324  acc: 0.9289   val loss: 1.3001  acc: 0.7579   test loss: 0.7247  acc: 0.7233
+(array([2.71552142]), array([0.58905594]))
+epoch 68   train loss: 1.2566  acc: 0.9274   val loss: 1.3095  acc: 0.7414   test loss: 0.7334  acc: 0.7233
+(array([2.72310232]), array([0.60441491]))
+epoch 69   train loss: 1.2276  acc: 0.9349   val loss: 1.3026  acc: 0.7534   test loss: 0.7236  acc: 0.7293
+(array([2.7301049]), array([0.62245741]))
+epoch 70   train loss: 1.2380  acc: 0.9384   val loss: 1.3163  acc: 0.7534   test loss: 0.7204  acc: 0.7203
+(array([2.7369362]), array([0.6415283]))
+epoch 71   train loss: 1.2415  acc: 0.9444   val loss: 1.3105  acc: 0.7729   test loss: 0.7261  acc: 0.7218
+(array([2.74400959]), array([0.661523]))
+epoch 72   train loss: 1.2214  acc: 0.9389   val loss: 1.3129  acc: 0.7654   test loss: 0.7314  acc: 0.7323
+(array([2.75144416]), array([0.68264073]))
+epoch 73   train loss: 1.2655  acc: 0.9369   val loss: 1.3155  acc: 0.7699   test loss: 0.7338  acc: 0.7368
+(array([2.75860394]), array([0.7045925]))
+epoch 74   train loss: 1.2532  acc: 0.9414   val loss: 1.3232  acc: 0.7519   test loss: 0.7326  acc: 0.7203
+(array([2.76585522]), array([0.72769417]))
+epoch 75   train loss: 1.2609  acc: 0.9389   val loss: 1.3302  acc: 0.7594   test loss: 0.7414  acc: 0.7173
+(array([2.77287427]), array([0.75153783]))
+epoch 76   train loss: 1.2863  acc: 0.9224   val loss: 1.3632  acc: 0.7684   test loss: 0.7682  acc: 0.7128
+(array([2.77910408]), array([0.77444256]))
+epoch 77   train loss: 1.2828  acc: 0.9259   val loss: 1.3824  acc: 0.7534   test loss: 0.7773  acc: 0.7293
+(array([2.78460597]), array([0.79850498]))
+epoch 78   train loss: 1.3008  acc: 0.9279   val loss: 1.3642  acc: 0.7654   test loss: 0.7811  acc: 0.7383
+(array([2.78858599]), array([0.82488189]))
+epoch 79   train loss: 1.3144  acc: 0.9229   val loss: 1.3885  acc: 0.7609   test loss: 0.7805  acc: 0.7263
+(array([2.79210621]), array([0.84985596]))
+epoch 80   train loss: 1.3313  acc: 0.9364   val loss: 1.4067  acc: 0.7459   test loss: 0.8043  acc: 0.7248
+(array([2.79424573]), array([0.87831716]))
+epoch 81   train loss: 1.3644  acc: 0.9424   val loss: 1.4103  acc: 0.7444   test loss: 0.8079  acc: 0.7233
+(array([2.79665405]), array([0.90799894]))
+epoch 82   train loss: 1.3832  acc: 0.9314   val loss: 1.4277  acc: 0.7564   test loss: 0.8235  acc: 0.7173
+(array([2.79802049]), array([0.93851105]))
+epoch 83   train loss: 1.3496  acc: 0.9329   val loss: 1.4264  acc: 0.7594   test loss: 0.8329  acc: 0.7398
+(array([2.79937636]), array([0.96976398]))
+epoch 84   train loss: 1.4302  acc: 0.9134   val loss: 1.4673  acc: 0.7459   test loss: 0.8887  acc: 0.7173
+(array([2.79992519]), array([1.00139176]))
+epoch 85   train loss: 1.3893  acc: 0.9269   val loss: 1.4957  acc: 0.7639   test loss: 0.8868  acc: 0.7263
+(array([2.79944038]), array([1.03351823]))
+epoch 86   train loss: 1.4129  acc: 0.9354   val loss: 1.5189  acc: 0.7594   test loss: 0.9041  acc: 0.7398
+(array([2.79868099]), array([1.06665385]))
+epoch 87   train loss: 1.5034  acc: 0.9194   val loss: 1.5643  acc: 0.7549   test loss: 0.9670  acc: 0.7158
+(array([2.79701163]), array([1.10035118]))
+epoch 88   train loss: 1.5214  acc: 0.9304   val loss: 1.5912  acc: 0.7549   test loss: 0.9910  acc: 0.7278
+(array([2.79532774]), array([1.13513223]))
+epoch 89   train loss: 1.5897  acc: 0.9324   val loss: 1.6588  acc: 0.7414   test loss: 1.0434  acc: 0.7323
+(array([2.79402724]), array([1.16831939]))
+epoch 90   train loss: 1.6552  acc: 0.9269   val loss: 1.7044  acc: 0.7564   test loss: 1.1056  acc: 0.7293
+(array([2.7920484]), array([1.20292336]))
+epoch 91   train loss: 1.7566  acc: 0.9149   val loss: 1.8214  acc: 0.7459   test loss: 1.2132  acc: 0.7113
+(array([2.7880967]), array([1.24031915]))
+epoch 92   train loss: 1.8665  acc: 0.8773   val loss: 1.9646  acc: 0.7459   test loss: 1.3712  acc: 0.7218
+(array([2.78026989]), array([1.27719516]))
+epoch 93   train loss: 2.1423  acc: 0.8758   val loss: 2.1869  acc: 0.7323   test loss: 1.5526  acc: 0.6917
+(array([2.76728088]), array([1.31441763]))
+epoch 94   train loss: 2.1938  acc: 0.9174   val loss: 2.2809  acc: 0.7609   test loss: 1.6040  acc: 0.7083
+(array([2.75258596]), array([1.35264698]))
+epoch 95   train loss: 2.4054  acc: 0.9044   val loss: 2.5346  acc: 0.7579   test loss: 1.8255  acc: 0.7203
+(array([2.73468592]), array([1.39235916]))
+epoch 96   train loss: 2.5397  acc: 0.9224   val loss: 2.6667  acc: 0.7549   test loss: 1.9628  acc: 0.7263
+(array([2.71513814]), array([1.43342526]))
+epoch 97   train loss: 2.8363  acc: 0.9044   val loss: 2.8956  acc: 0.7323   test loss: 2.2212  acc: 0.7143
+(array([2.69375593]), array([1.47588005]))
+epoch 98   train loss: 3.0490  acc: 0.9244   val loss: 3.1030  acc: 0.7504   test loss: 2.4504  acc: 0.7233
+(array([2.67265841]), array([1.52025557]))
+epoch 99   train loss: 3.3237  acc: 0.8868   val loss: 3.4425  acc: 0.7474   test loss: 2.8362  acc: 0.7038
+(array([2.6509939]), array([1.56338914]))
+epoch 100   train loss: 3.8748  acc: 0.8633   val loss: 3.9094  acc: 0.7233   test loss: 3.2598  acc: 0.6977

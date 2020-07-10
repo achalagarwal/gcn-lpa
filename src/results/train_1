@@ -1,0 +1,448 @@
+epoch 0   train loss: 3.5772  acc: 0.1622   val loss: 3.9719  acc: 0.5429   test loss: 3.9828  acc: 0.5293
+2020-07-07 12:09:16.574972: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([1.08144817]), array([0.01721757]))
+epoch 1   train loss: 4.0310  acc: 0.5969   val loss: 3.5385  acc: 0.6045   test loss: 3.5474  acc: 0.6316
+2020-07-07 12:10:20.368336: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([1.07003104]), array([0.04053019]))
+epoch 2   train loss: 3.5796  acc: 0.6465   val loss: 3.5308  acc: 0.6195   test loss: 3.5317  acc: 0.6511
+2020-07-07 12:11:14.432106: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([1.03147129]), array([0.07025128]))
+epoch 3   train loss: 3.5006  acc: 0.6775   val loss: 3.5693  acc: 0.6271   test loss: 3.5545  acc: 0.6767
+2020-07-07 12:12:12.014499: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.98059863]), array([0.10906042]))
+epoch 4   train loss: 3.5118  acc: 0.7001   val loss: 3.3987  acc: 0.6226   test loss: 3.3727  acc: 0.6782
+2020-07-07 12:13:19.689291: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.92400214]), array([0.14976217]))
+epoch 5   train loss: 3.3421  acc: 0.7031   val loss: 3.2161  acc: 0.6150   test loss: 3.1865  acc: 0.6617
+2020-07-07 12:14:22.795363: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.87184035]), array([0.18429957]))
+epoch 6   train loss: 3.1711  acc: 0.6785   val loss: 3.1499  acc: 0.6511   test loss: 3.1131  acc: 0.6947
+2020-07-07 12:15:22.052902: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.83433788]), array([0.20396172]))
+epoch 7   train loss: 3.0529  acc: 0.7166   val loss: 3.1700  acc: 0.6662   test loss: 3.1243  acc: 0.7113
+2020-07-07 12:16:16.809906: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81351092]), array([0.20932968]))
+epoch 8   train loss: 3.0045  acc: 0.7707   val loss: 3.1754  acc: 0.6707   test loss: 3.1308  acc: 0.7248
+2020-07-07 12:17:10.948256: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80517413]), array([0.20246511]))
+epoch 9   train loss: 2.9363  acc: 0.7852   val loss: 3.1417  acc: 0.6571   test loss: 3.0983  acc: 0.7143
+2020-07-07 12:18:03.202301: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80673009]), array([0.19143275]))
+epoch 10   train loss: 2.8272  acc: 0.8012   val loss: 3.1123  acc: 0.6526   test loss: 3.0646  acc: 0.7098
+2020-07-07 12:19:00.808943: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8150309]), array([0.18110965]))
+epoch 11   train loss: 2.7177  acc: 0.8092   val loss: 3.1223  acc: 0.6541   test loss: 3.0737  acc: 0.7128
+2020-07-07 12:20:10.807501: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8267333]), array([0.17401881]))
+epoch 12   train loss: 2.6392  acc: 0.8237   val loss: 3.1693  acc: 0.6632   test loss: 3.1147  acc: 0.7248
+2020-07-07 12:21:05.116100: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.83874012]), array([0.17162035]))
+epoch 13   train loss: 2.6067  acc: 0.8408   val loss: 3.2205  acc: 0.6677   test loss: 3.1566  acc: 0.7248
+2020-07-07 12:22:00.236231: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.84850755]), array([0.17406403]))
+epoch 14   train loss: 2.5818  acc: 0.8648   val loss: 3.2478  acc: 0.6677   test loss: 3.1781  acc: 0.7308
+2020-07-07 12:22:54.054368: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.85446048]), array([0.18114815]))
+epoch 15   train loss: 2.5454  acc: 0.8733   val loss: 3.2540  acc: 0.6707   test loss: 3.1744  acc: 0.7323
+2020-07-07 12:23:55.722596: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.85592468]), array([0.19252136]))
+epoch 16   train loss: 2.4921  acc: 0.8853   val loss: 3.2616  acc: 0.6692   test loss: 3.1672  acc: 0.7323
+2020-07-07 12:24:45.154579: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8530108]), array([0.20821559]))
+epoch 17   train loss: 2.4453  acc: 0.8968   val loss: 3.2939  acc: 0.6662   test loss: 3.1831  acc: 0.7338
+2020-07-07 12:25:40.400661: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.84653794]), array([0.22787382]))
+epoch 18   train loss: 2.4189  acc: 0.9039   val loss: 3.3348  acc: 0.6571   test loss: 3.2066  acc: 0.7338
+2020-07-07 12:26:46.913091: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.83746367]), array([0.25087292]))
+epoch 19   train loss: 2.4022  acc: 0.9114   val loss: 3.3811  acc: 0.6571   test loss: 3.2399  acc: 0.7338
+2020-07-07 12:27:37.326523: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82689421]), array([0.27607203]))
+epoch 20   train loss: 2.3815  acc: 0.9129   val loss: 3.4237  acc: 0.6586   test loss: 3.2706  acc: 0.7263
+2020-07-07 12:28:35.849932: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81545487]), array([0.30256148]))
+epoch 21   train loss: 2.3562  acc: 0.9239   val loss: 3.4663  acc: 0.6632   test loss: 3.3043  acc: 0.7263
+2020-07-07 12:29:39.587665: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80365069]), array([0.32979278]))
+epoch 22   train loss: 2.3403  acc: 0.9264   val loss: 3.5087  acc: 0.6632   test loss: 3.3410  acc: 0.7308
+2020-07-07 12:30:22.582760: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.7918906]), array([0.35604465]))
+epoch 23   train loss: 2.3267  acc: 0.9329   val loss: 3.5526  acc: 0.6617   test loss: 3.3828  acc: 0.7248
+2020-07-07 12:31:27.382261: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78067068]), array([0.38012652]))
+epoch 24   train loss: 2.3122  acc: 0.9339   val loss: 3.5874  acc: 0.6586   test loss: 3.4114  acc: 0.7293
+2020-07-07 12:32:14.709702: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.77090077]), array([0.40228476]))
+epoch 25   train loss: 2.3050  acc: 0.9424   val loss: 3.6114  acc: 0.6617   test loss: 3.4332  acc: 0.7263
+2020-07-07 12:33:16.565391: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.76343147]), array([0.42202582]))
+epoch 26   train loss: 2.3001  acc: 0.9484   val loss: 3.6360  acc: 0.6586   test loss: 3.4475  acc: 0.7308
+2020-07-07 12:34:24.697085: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.75874932]), array([0.43806319]))
+epoch 27   train loss: 2.2870  acc: 0.9499   val loss: 3.6684  acc: 0.6602   test loss: 3.4796  acc: 0.7308
+2020-07-07 12:35:17.207784: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.75692722]), array([0.45096799]))
+epoch 28   train loss: 2.2762  acc: 0.9599   val loss: 3.7012  acc: 0.6617   test loss: 3.5091  acc: 0.7338
+2020-07-07 12:36:02.610925: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.75718058]), array([0.46094506]))
+epoch 29   train loss: 2.2702  acc: 0.9629   val loss: 3.7267  acc: 0.6511   test loss: 3.5232  acc: 0.7308
+2020-07-07 12:36:59.866357: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.75882552]), array([0.46865879]))
+epoch 30   train loss: 2.2595  acc: 0.9634   val loss: 3.7302  acc: 0.6541   test loss: 3.5315  acc: 0.7218
+2020-07-07 12:37:56.050885: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.76118255]), array([0.47504004]))
+epoch 31   train loss: 2.2531  acc: 0.9680   val loss: 3.7391  acc: 0.6496   test loss: 3.5317  acc: 0.7308
+2020-07-07 12:38:52.185611: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.76408783]), array([0.48019924]))
+epoch 32   train loss: 2.2479  acc: 0.9670   val loss: 3.7344  acc: 0.6511   test loss: 3.5489  acc: 0.7233
+2020-07-07 12:40:08.138662: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.76745933]), array([0.48446724]))
+epoch 33   train loss: 2.2406  acc: 0.9720   val loss: 3.7375  acc: 0.6526   test loss: 3.5492  acc: 0.7263
+2020-07-07 12:40:54.681925: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.77096825]), array([0.48837838]))
+epoch 34   train loss: 2.2349  acc: 0.9730   val loss: 3.7652  acc: 0.6451   test loss: 3.5627  acc: 0.7308
+2020-07-07 12:41:51.705784: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.7743559]), array([0.49186807]))
+epoch 35   train loss: 2.2304  acc: 0.9730   val loss: 3.7651  acc: 0.6541   test loss: 3.5765  acc: 0.7278
+2020-07-07 12:42:56.454514: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.7770381]), array([0.49562639]))
+epoch 36   train loss: 2.2293  acc: 0.9715   val loss: 3.7770  acc: 0.6571   test loss: 3.5789  acc: 0.7248
+2020-07-07 12:43:56.369935: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.77886636]), array([0.49980013]))
+epoch 37   train loss: 2.2155  acc: 0.9735   val loss: 3.7867  acc: 0.6481   test loss: 3.5839  acc: 0.7293
+2020-07-07 12:44:47.435757: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.77999197]), array([0.50495889]))
+epoch 38   train loss: 2.2157  acc: 0.9715   val loss: 3.7700  acc: 0.6617   test loss: 3.5778  acc: 0.7233
+2020-07-07 12:45:42.747480: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78042644]), array([0.51079514]))
+epoch 39   train loss: 2.2120  acc: 0.9705   val loss: 3.7726  acc: 0.6556   test loss: 3.5746  acc: 0.7263
+2020-07-07 12:46:42.773012: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78046995]), array([0.51731972]))
+epoch 40   train loss: 2.2060  acc: 0.9750   val loss: 3.7995  acc: 0.6496   test loss: 3.5897  acc: 0.7263
+2020-07-07 12:47:34.095701: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78061884]), array([0.52443395]))
+epoch 41   train loss: 2.2098  acc: 0.9715   val loss: 3.8000  acc: 0.6541   test loss: 3.5919  acc: 0.7233
+2020-07-07 12:48:19.094893: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78080466]), array([0.53183345]))
+epoch 42   train loss: 2.2055  acc: 0.9725   val loss: 3.7928  acc: 0.6586   test loss: 3.5865  acc: 0.7248
+2020-07-07 12:49:25.719250: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78107247]), array([0.5392779]))
+epoch 43   train loss: 2.2042  acc: 0.9720   val loss: 3.7977  acc: 0.6556   test loss: 3.5898  acc: 0.7188
+2020-07-07 12:50:23.089603: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78150226]), array([0.54671565]))
+epoch 44   train loss: 2.2045  acc: 0.9624   val loss: 3.7805  acc: 0.6511   test loss: 3.5743  acc: 0.7203
+2020-07-07 12:51:06.251359: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78192065]), array([0.55389374]))
+epoch 45   train loss: 2.2015  acc: 0.9609   val loss: 3.7560  acc: 0.6541   test loss: 3.5523  acc: 0.7203
+2020-07-07 12:52:03.119058: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78226825]), array([0.56101999]))
+epoch 46   train loss: 2.1938  acc: 0.9644   val loss: 3.7523  acc: 0.6586   test loss: 3.5547  acc: 0.7218
+2020-07-07 12:53:09.166744: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78261908]), array([0.56816718]))
+epoch 47   train loss: 2.1929  acc: 0.9649   val loss: 3.7658  acc: 0.6511   test loss: 3.5691  acc: 0.7278
+2020-07-07 12:54:10.521362: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78321317]), array([0.57525546]))
+epoch 48   train loss: 2.1915  acc: 0.9664   val loss: 3.7618  acc: 0.6526   test loss: 3.5746  acc: 0.7203
+2020-07-07 12:55:04.357230: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.7842396]), array([0.5818178]))
+epoch 49   train loss: 2.1852  acc: 0.9710   val loss: 3.7650  acc: 0.6541   test loss: 3.5839  acc: 0.7233
+2020-07-07 12:56:02.321731: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78546308]), array([0.58830782]))
+epoch 50   train loss: 2.1852  acc: 0.9710   val loss: 3.7667  acc: 0.6541   test loss: 3.5849  acc: 0.7233
+2020-07-07 12:56:48.587175: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78656545]), array([0.59495706]))
+epoch 51   train loss: 2.1839  acc: 0.9700   val loss: 3.7485  acc: 0.6556   test loss: 3.5723  acc: 0.7308
+2020-07-07 12:57:49.237663: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.7874291]), array([0.60140706]))
+epoch 52   train loss: 2.1768  acc: 0.9700   val loss: 3.7359  acc: 0.6571   test loss: 3.5607  acc: 0.7263
+2020-07-07 12:58:43.684028: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78835402]), array([0.6080382]))
+epoch 53   train loss: 2.1724  acc: 0.9725   val loss: 3.7323  acc: 0.6571   test loss: 3.5565  acc: 0.7173
+2020-07-07 12:59:43.891778: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.78937368]), array([0.61477272]))
+epoch 54   train loss: 2.1733  acc: 0.9720   val loss: 3.7326  acc: 0.6496   test loss: 3.5520  acc: 0.7203
+2020-07-07 13:00:26.913928: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.7905515]), array([0.62115274]))
+epoch 55   train loss: 2.1710  acc: 0.9680   val loss: 3.7403  acc: 0.6541   test loss: 3.5506  acc: 0.7173
+2020-07-07 13:01:27.187070: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.79181151]), array([0.62691994]))
+epoch 56   train loss: 2.1689  acc: 0.9710   val loss: 3.7383  acc: 0.6511   test loss: 3.5444  acc: 0.7188
+2020-07-07 13:02:20.607244: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.79278001]), array([0.63240294]))
+epoch 57   train loss: 2.1676  acc: 0.9725   val loss: 3.7301  acc: 0.6526   test loss: 3.5383  acc: 0.7203
+2020-07-07 13:03:38.519713: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.79335576]), array([0.63816843]))
+epoch 58   train loss: 2.1689  acc: 0.9740   val loss: 3.7295  acc: 0.6526   test loss: 3.5420  acc: 0.7218
+2020-07-07 13:04:26.083119: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.79356417]), array([0.64407548]))
+epoch 59   train loss: 2.1653  acc: 0.9760   val loss: 3.7286  acc: 0.6556   test loss: 3.5463  acc: 0.7188
+2020-07-07 13:05:22.416144: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.79374155]), array([0.65015196]))
+epoch 60   train loss: 2.1658  acc: 0.9725   val loss: 3.7330  acc: 0.6541   test loss: 3.5510  acc: 0.7188
+2020-07-07 13:06:29.740667: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.7941167]), array([0.65591318]))
+epoch 61   train loss: 2.1626  acc: 0.9730   val loss: 3.7357  acc: 0.6511   test loss: 3.5567  acc: 0.7158
+2020-07-07 13:07:23.803847: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.79469575]), array([0.6613698]))
+epoch 62   train loss: 2.1611  acc: 0.9730   val loss: 3.7440  acc: 0.6526   test loss: 3.5606  acc: 0.7188
+2020-07-07 13:08:44.323924: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.79542436]), array([0.66662738]))
+epoch 63   train loss: 2.1614  acc: 0.9705   val loss: 3.7369  acc: 0.6526   test loss: 3.5506  acc: 0.7218
+2020-07-07 13:10:39.799916: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.79613413]), array([0.67165154]))
+epoch 64   train loss: 2.1618  acc: 0.9720   val loss: 3.7319  acc: 0.6571   test loss: 3.5499  acc: 0.7233
+2020-07-07 13:12:31.015048: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.79676793]), array([0.67638289]))
+epoch 65   train loss: 2.1608  acc: 0.9710   val loss: 3.7252  acc: 0.6541   test loss: 3.5483  acc: 0.7218
+2020-07-07 13:13:54.954916: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.79735637]), array([0.68077496]))
+epoch 66   train loss: 2.1588  acc: 0.9705   val loss: 3.7188  acc: 0.6541   test loss: 3.5393  acc: 0.7218
+2020-07-07 13:14:46.243139: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.7981226]), array([0.68457852]))
+epoch 67   train loss: 2.1585  acc: 0.9725   val loss: 3.7217  acc: 0.6571   test loss: 3.5394  acc: 0.7218
+2020-07-07 13:15:29.696625: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.7991934]), array([0.68793177]))
+epoch 68   train loss: 2.1622  acc: 0.9710   val loss: 3.7235  acc: 0.6511   test loss: 3.5422  acc: 0.7188
+2020-07-07 13:16:16.385953: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80026552]), array([0.69062335]))
+epoch 69   train loss: 2.1614  acc: 0.9730   val loss: 3.7192  acc: 0.6556   test loss: 3.5470  acc: 0.7188
+2020-07-07 13:16:59.230566: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80133485]), array([0.69278764]))
+epoch 70   train loss: 2.1590  acc: 0.9735   val loss: 3.7244  acc: 0.6541   test loss: 3.5524  acc: 0.7188
+2020-07-07 13:17:46.563992: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80240946]), array([0.69479457]))
+epoch 71   train loss: 2.1558  acc: 0.9695   val loss: 3.7278  acc: 0.6571   test loss: 3.5493  acc: 0.7218
+2020-07-07 13:18:52.616778: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80339874]), array([0.69679505]))
+epoch 72   train loss: 2.1537  acc: 0.9720   val loss: 3.7274  acc: 0.6526   test loss: 3.5498  acc: 0.7233
+2020-07-07 13:19:46.626280: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80430281]), array([0.69920229]))
+epoch 73   train loss: 2.1554  acc: 0.9710   val loss: 3.7307  acc: 0.6511   test loss: 3.5607  acc: 0.7158
+2020-07-07 13:20:31.278611: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80505588]), array([0.70205121]))
+epoch 74   train loss: 2.1620  acc: 0.9740   val loss: 3.7456  acc: 0.6541   test loss: 3.5718  acc: 0.7113
+2020-07-07 13:21:14.170864: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80575256]), array([0.70424569]))
+epoch 75   train loss: 2.1587  acc: 0.9730   val loss: 3.7545  acc: 0.6541   test loss: 3.5725  acc: 0.7143
+2020-07-07 13:22:05.621605: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8066605]), array([0.70608529]))
+epoch 76   train loss: 2.1533  acc: 0.9725   val loss: 3.7540  acc: 0.6556   test loss: 3.5739  acc: 0.7143
+2020-07-07 13:22:57.849283: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80767025]), array([0.70813108]))
+epoch 77   train loss: 2.1544  acc: 0.9730   val loss: 3.7515  acc: 0.6541   test loss: 3.5766  acc: 0.7098
+2020-07-07 13:23:56.943651: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80819328]), array([0.71063862]))
+epoch 78   train loss: 2.1578  acc: 0.9720   val loss: 3.7487  acc: 0.6526   test loss: 3.5735  acc: 0.7143
+2020-07-07 13:24:53.361563: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80817768]), array([0.71358035]))
+epoch 79   train loss: 2.1571  acc: 0.9750   val loss: 3.7435  acc: 0.6556   test loss: 3.5721  acc: 0.7143
+2020-07-07 13:25:36.329421: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80816904]), array([0.71666211]))
+epoch 80   train loss: 2.1581  acc: 0.9745   val loss: 3.7534  acc: 0.6526   test loss: 3.5820  acc: 0.7128
+2020-07-07 13:26:23.291051: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80877544]), array([0.71941731]))
+epoch 81   train loss: 2.1565  acc: 0.9740   val loss: 3.7566  acc: 0.6496   test loss: 3.5784  acc: 0.7113
+2020-07-07 13:27:06.073841: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80994349]), array([0.72180764]))
+epoch 82   train loss: 2.1562  acc: 0.9750   val loss: 3.7714  acc: 0.6541   test loss: 3.5736  acc: 0.7203
+2020-07-07 13:28:10.016601: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8108016]), array([0.72439327]))
+epoch 83   train loss: 2.1568  acc: 0.9740   val loss: 3.7861  acc: 0.6556   test loss: 3.5814  acc: 0.7263
+2020-07-07 13:29:01.992469: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81082705]), array([0.72788933]))
+epoch 84   train loss: 2.1595  acc: 0.9745   val loss: 3.7774  acc: 0.6496   test loss: 3.5916  acc: 0.7143
+2020-07-07 13:29:47.482302: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81013786]), array([0.73183623]))
+epoch 85   train loss: 2.1603  acc: 0.9740   val loss: 3.7679  acc: 0.6466   test loss: 3.5781  acc: 0.7233
+2020-07-07 13:30:38.578027: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80960122]), array([0.73517344]))
+epoch 86   train loss: 2.1536  acc: 0.9750   val loss: 3.7784  acc: 0.6466   test loss: 3.5839  acc: 0.7188
+2020-07-07 13:31:30.205419: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8095528]), array([0.73819967]))
+epoch 87   train loss: 2.1617  acc: 0.9710   val loss: 3.7760  acc: 0.6466   test loss: 3.5915  acc: 0.7158
+2020-07-07 13:32:26.192481: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80965972]), array([0.74061308]))
+epoch 88   train loss: 2.1524  acc: 0.9705   val loss: 3.7693  acc: 0.6496   test loss: 3.5818  acc: 0.7218
+2020-07-07 13:33:30.232750: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80984242]), array([0.74278296]))
+epoch 89   train loss: 2.1520  acc: 0.9695   val loss: 3.7661  acc: 0.6541   test loss: 3.5717  acc: 0.7248
+2020-07-07 13:35:19.073515: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.80998073]), array([0.74500414]))
+epoch 90   train loss: 2.1557  acc: 0.9705   val loss: 3.7785  acc: 0.6556   test loss: 3.5703  acc: 0.7218
+2020-07-07 13:36:59.896295: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8100865]), array([0.74725523]))
+epoch 91   train loss: 2.1534  acc: 0.9725   val loss: 3.7889  acc: 0.6511   test loss: 3.5737  acc: 0.7173
+2020-07-07 13:38:43.123727: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81032639]), array([0.74964726]))
+epoch 92   train loss: 2.1561  acc: 0.9735   val loss: 3.7821  acc: 0.6541   test loss: 3.5695  acc: 0.7203
+2020-07-07 13:39:58.560439: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81095534]), array([0.75162291]))
+epoch 93   train loss: 2.1600  acc: 0.9715   val loss: 3.7982  acc: 0.6541   test loss: 3.5879  acc: 0.7173
+2020-07-07 13:40:59.437578: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81209047]), array([0.7528515]))
+epoch 94   train loss: 2.1553  acc: 0.9735   val loss: 3.8155  acc: 0.6511   test loss: 3.6076  acc: 0.7143
+2020-07-07 13:41:53.172790: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8130453]), array([0.75430637]))
+epoch 95   train loss: 2.1548  acc: 0.9740   val loss: 3.8031  acc: 0.6481   test loss: 3.6016  acc: 0.7113
+2020-07-07 13:42:49.217392: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81311051]), array([0.75660949]))
+epoch 96   train loss: 2.1512  acc: 0.9720   val loss: 3.7793  acc: 0.6481   test loss: 3.5839  acc: 0.7158
+2020-07-07 13:43:40.080473: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81255077]), array([0.7597451]))
+epoch 97   train loss: 2.1518  acc: 0.9715   val loss: 3.7670  acc: 0.6511   test loss: 3.5708  acc: 0.7143
+2020-07-07 13:44:45.577284: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8123231]), array([0.76241705]))
+epoch 98   train loss: 2.1462  acc: 0.9720   val loss: 3.7719  acc: 0.6481   test loss: 3.5690  acc: 0.7218
+2020-07-07 13:45:35.685642: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81277714]), array([0.76486196]))
+epoch 99   train loss: 2.1477  acc: 0.9755   val loss: 3.7887  acc: 0.6466   test loss: 3.5831  acc: 0.7188
+2020-07-07 13:46:22.037171: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81350872]), array([0.76734696]))
+epoch 100   train loss: 2.1473  acc: 0.9735   val loss: 3.7910  acc: 0.6541   test loss: 3.5793  acc: 0.7188
+2020-07-07 13:47:30.869011: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81396668]), array([0.77043067]))
+epoch 101   train loss: 2.1514  acc: 0.9730   val loss: 3.7854  acc: 0.6511   test loss: 3.5702  acc: 0.7293
+2020-07-07 13:48:22.364884: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81368427]), array([0.77384927]))
+epoch 102   train loss: 2.1522  acc: 0.9715   val loss: 3.7824  acc: 0.6511   test loss: 3.5764  acc: 0.7278
+2020-07-07 13:49:20.159210: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81330627]), array([0.77723741]))
+epoch 103   train loss: 2.1520  acc: 0.9710   val loss: 3.7919  acc: 0.6496   test loss: 3.5853  acc: 0.7218
+2020-07-07 13:50:31.047030: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8133711]), array([0.77991167]))
+epoch 104   train loss: 2.1498  acc: 0.9715   val loss: 3.7949  acc: 0.6481   test loss: 3.5823  acc: 0.7248
+2020-07-07 13:51:31.977115: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81402852]), array([0.78216841]))
+epoch 105   train loss: 2.1501  acc: 0.9710   val loss: 3.7889  acc: 0.6466   test loss: 3.5732  acc: 0.7263
+2020-07-07 13:53:17.924991: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81478325]), array([0.78449888]))
+epoch 106   train loss: 2.1494  acc: 0.9710   val loss: 3.7857  acc: 0.6511   test loss: 3.5735  acc: 0.7188
+2020-07-07 13:54:56.565075: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81543316]), array([0.78716489]))
+epoch 107   train loss: 2.1458  acc: 0.9730   val loss: 3.7917  acc: 0.6451   test loss: 3.5766  acc: 0.7128
+2020-07-07 13:56:35.760813: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81578394]), array([0.79026345]))
+epoch 108   train loss: 2.1529  acc: 0.9705   val loss: 3.7939  acc: 0.6496   test loss: 3.5748  acc: 0.7158
+2020-07-07 13:58:06.366943: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81575692]), array([0.7935518]))
+epoch 109   train loss: 2.1431  acc: 0.9745   val loss: 3.7922  acc: 0.6481   test loss: 3.5851  acc: 0.7173
+2020-07-07 13:59:11.201392: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81583014]), array([0.79717936]))
+epoch 110   train loss: 2.1464  acc: 0.9725   val loss: 3.7877  acc: 0.6466   test loss: 3.5906  acc: 0.7218
+2020-07-07 13:59:58.326642: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81611453]), array([0.8003361]))
+epoch 111   train loss: 2.1449  acc: 0.9730   val loss: 3.7772  acc: 0.6511   test loss: 3.5834  acc: 0.7188
+2020-07-07 14:00:45.013809: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81653648]), array([0.80300472]))
+epoch 112   train loss: 2.1425  acc: 0.9740   val loss: 3.7735  acc: 0.6496   test loss: 3.5792  acc: 0.7203
+2020-07-07 14:01:44.957708: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81691469]), array([0.80551598]))
+epoch 113   train loss: 2.1459  acc: 0.9730   val loss: 3.7670  acc: 0.6541   test loss: 3.5784  acc: 0.7143
+2020-07-07 14:02:27.926988: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81732253]), array([0.80757105]))
+epoch 114   train loss: 2.1395  acc: 0.9720   val loss: 3.7685  acc: 0.6526   test loss: 3.5772  acc: 0.7158
+2020-07-07 14:03:21.813193: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8179086]), array([0.8099245]))
+epoch 115   train loss: 2.1404  acc: 0.9720   val loss: 3.7865  acc: 0.6541   test loss: 3.5791  acc: 0.7233
+2020-07-07 14:04:05.213615: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81865981]), array([0.81236618]))
+epoch 116   train loss: 2.1440  acc: 0.9715   val loss: 3.7845  acc: 0.6541   test loss: 3.5817  acc: 0.7218
+2020-07-07 14:05:00.237268: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81931138]), array([0.81511992]))
+epoch 117   train loss: 2.1434  acc: 0.9715   val loss: 3.7806  acc: 0.6541   test loss: 3.5899  acc: 0.7173
+2020-07-07 14:06:01.058702: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.81975533]), array([0.81817596]))
+epoch 118   train loss: 2.1434  acc: 0.9725   val loss: 3.7782  acc: 0.6541   test loss: 3.5940  acc: 0.7173
+2020-07-07 14:06:52.529869: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82018049]), array([0.82125345]))
+epoch 119   train loss: 2.1412  acc: 0.9740   val loss: 3.7859  acc: 0.6526   test loss: 3.5988  acc: 0.7203
+2020-07-07 14:07:47.120775: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82069111]), array([0.82447641]))
+epoch 120   train loss: 2.1453  acc: 0.9715   val loss: 3.7846  acc: 0.6526   test loss: 3.5968  acc: 0.7203
+2020-07-07 14:08:41.551720: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82101765]), array([0.82793145]))
+epoch 121   train loss: 2.1424  acc: 0.9700   val loss: 3.7766  acc: 0.6571   test loss: 3.5919  acc: 0.7233
+2020-07-07 14:09:40.597771: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82122893]), array([0.83153245]))
+epoch 122   train loss: 2.1401  acc: 0.9740   val loss: 3.7715  acc: 0.6541   test loss: 3.5930  acc: 0.7263
+2020-07-07 14:10:45.461688: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82191631]), array([0.83527525]))
+epoch 123   train loss: 2.1436  acc: 0.9735   val loss: 3.7657  acc: 0.6526   test loss: 3.5913  acc: 0.7233
+2020-07-07 14:11:40.450318: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8231269]), array([0.83874215]))
+epoch 124   train loss: 2.1425  acc: 0.9750   val loss: 3.7749  acc: 0.6571   test loss: 3.5963  acc: 0.7218
+2020-07-07 14:12:43.189878: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82435686]), array([0.84231655]))
+epoch 125   train loss: 2.1422  acc: 0.9755   val loss: 3.7759  acc: 0.6496   test loss: 3.5983  acc: 0.7143
+2020-07-07 14:13:44.605118: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82526482]), array([0.84589621]))
+epoch 126   train loss: 2.1442  acc: 0.9740   val loss: 3.7721  acc: 0.6541   test loss: 3.5932  acc: 0.7188
+2020-07-07 14:14:43.045861: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82568645]), array([0.84902591]))
+epoch 127   train loss: 2.1444  acc: 0.9760   val loss: 3.7803  acc: 0.6481   test loss: 3.5990  acc: 0.7173
+2020-07-07 14:15:29.896515: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82589116]), array([0.85185455]))
+epoch 128   train loss: 2.1397  acc: 0.9770   val loss: 3.7821  acc: 0.6511   test loss: 3.6049  acc: 0.7158
+2020-07-07 14:16:28.094887: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82579092]), array([0.85519711]))
+epoch 129   train loss: 2.1454  acc: 0.9775   val loss: 3.7740  acc: 0.6526   test loss: 3.6021  acc: 0.7113
+2020-07-07 14:18:13.418002: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82559958]), array([0.8576884]))
+epoch 130   train loss: 2.1422  acc: 0.9775   val loss: 3.7791  acc: 0.6526   test loss: 3.6146  acc: 0.7068
+2020-07-07 14:19:53.509533: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82568961]), array([0.85968221]))
+epoch 131   train loss: 2.1517  acc: 0.9745   val loss: 3.7788  acc: 0.6541   test loss: 3.6091  acc: 0.7173
+2020-07-07 14:21:36.400782: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82546212]), array([0.8611568]))
+epoch 132   train loss: 2.1505  acc: 0.9765   val loss: 3.7747  acc: 0.6526   test loss: 3.6010  acc: 0.7203
+2020-07-07 14:22:50.722284: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82516466]), array([0.86238455]))
+epoch 133   train loss: 2.1565  acc: 0.9750   val loss: 3.7764  acc: 0.6496   test loss: 3.5979  acc: 0.7218
+2020-07-07 14:23:48.079178: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8253722]), array([0.86326711]))
+epoch 134   train loss: 2.1567  acc: 0.9750   val loss: 3.7830  acc: 0.6496   test loss: 3.5959  acc: 0.7158
+2020-07-07 14:24:30.827504: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82598007]), array([0.86381593]))
+epoch 135   train loss: 2.1530  acc: 0.9730   val loss: 3.7874  acc: 0.6481   test loss: 3.5974  acc: 0.7158
+2020-07-07 14:25:13.708555: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82610267]), array([0.86503055]))
+epoch 136   train loss: 2.1456  acc: 0.9740   val loss: 3.7843  acc: 0.6526   test loss: 3.5956  acc: 0.7173
+2020-07-07 14:26:23.460611: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82554673]), array([0.86702656]))
+epoch 137   train loss: 2.1450  acc: 0.9770   val loss: 3.7800  acc: 0.6541   test loss: 3.5973  acc: 0.7098
+2020-07-07 14:27:23.090524: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82474231]), array([0.8689202]))
+epoch 138   train loss: 2.1472  acc: 0.9735   val loss: 3.7744  acc: 0.6556   test loss: 3.6036  acc: 0.7128
+2020-07-07 14:28:15.432554: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8242327]), array([0.87027561]))
+epoch 139   train loss: 2.1520  acc: 0.9730   val loss: 3.7670  acc: 0.6571   test loss: 3.6028  acc: 0.7113
+2020-07-07 14:29:09.636107: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82438823]), array([0.87067549]))
+epoch 140   train loss: 2.1435  acc: 0.9745   val loss: 3.7758  acc: 0.6556   test loss: 3.6152  acc: 0.7128
+2020-07-07 14:29:54.584833: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82496257]), array([0.87150925]))
+epoch 141   train loss: 2.1450  acc: 0.9745   val loss: 3.7939  acc: 0.6511   test loss: 3.6260  acc: 0.7098
+2020-07-07 14:30:45.669272: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82538753]), array([0.87283196]))
+epoch 142   train loss: 2.1467  acc: 0.9750   val loss: 3.7909  acc: 0.6511   test loss: 3.6219  acc: 0.7173
+2020-07-07 14:31:49.908229: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82575841]), array([0.8744053]))
+epoch 143   train loss: 2.1455  acc: 0.9770   val loss: 3.7818  acc: 0.6496   test loss: 3.6111  acc: 0.7158
+2020-07-07 14:32:42.599508: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82617462]), array([0.87613685]))
+epoch 144   train loss: 2.1444  acc: 0.9775   val loss: 3.7773  acc: 0.6511   test loss: 3.5985  acc: 0.7158
+2020-07-07 14:33:43.023861: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82638599]), array([0.8784449]))
+epoch 145   train loss: 2.1435  acc: 0.9770   val loss: 3.7783  acc: 0.6526   test loss: 3.5946  acc: 0.7143
+2020-07-07 14:34:31.421135: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82630907]), array([0.88095958]))
+epoch 146   train loss: 2.1391  acc: 0.9765   val loss: 3.7770  acc: 0.6496   test loss: 3.5928  acc: 0.7188
+2020-07-07 14:35:14.377364: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.8263789]), array([0.88344906]))
+epoch 147   train loss: 2.1368  acc: 0.9760   val loss: 3.7694  acc: 0.6511   test loss: 3.5855  acc: 0.7188
+2020-07-07 14:36:08.644328: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82682182]), array([0.8854798]))
+epoch 148   train loss: 2.1340  acc: 0.9755   val loss: 3.7664  acc: 0.6541   test loss: 3.5811  acc: 0.7158
+2020-07-07 14:37:00.101230: W ./tensorflow/core/grappler/optimizers/graph_optimizer_stage.h:241] Failed to run optimizer ArithmeticOptimizer, stage HoistCommonFactor node add_2. Error: Node ArithmeticOptimizer/HoistCommonFactor_Add_add_1 is missing output properties at position :0 (num_outputs=0)
+(array([0.82755351]), array([0.88744863]))
+epoch 149   train loss: 2.1430  acc: 0.9740   val loss: 3.7745  acc: 0.6511   test loss: 3.5824  acc: 0.7158
