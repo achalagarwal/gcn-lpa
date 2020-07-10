@@ -36,10 +36,10 @@ class GCN_LPA(object):
         # self.adj_ = tf.sparse_to_dense(self.adj)
         # self.adj = tf.print(self.adj_.values, [self.adj_])
         self.normalized_adj = tf.sparse_softmax(self.adj)
-        self.adj = tf.SparseTensor(adj[0], adj[1], adj[2])
+        self.adj_lpa = tf.SparseTensor(adj[0], adj[1], adj[2])
         # tf.debugging.assert_non_positive(self.normalized_adj)
 
-        # self.vars.append(edge_weights)
+        self.vars.append(edge_weights)
 
     def _build_gcn(self, feature_dim, label_dim, feature_nnz):
         hidden_list = []
@@ -96,7 +96,7 @@ class GCN_LPA(object):
 
         for _ in range(self.args.lpa_iter):
             # lp_layer = LPALayer(adj=self.normalized_adj)
-            lp_layer = LPALayer(adj=self.adj)
+            lp_layer = LPALayer(adj=self.adj_lpa)
             hidden = lp_layer(label_list[-1])
             label_list.append(hidden)
         self.predicted_label = label_list[-1]

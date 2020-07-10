@@ -11,18 +11,18 @@ tf.set_random_seed(seed)
 
 parser = argparse.ArgumentParser()
 
-'''
+# '''
 # cora
-parser.add_argument('--dataset', type=str, default='cora', help='which dataset to use')
-parser.add_argument('--epochs', type=int, default=200, help='the number of epochs')
-parser.add_argument('--dim', type=int, default=32, help='dimension of hidden layers')
-parser.add_argument('--gcn_layer', type=int, default=5, help='number of GCN layers')
-parser.add_argument('--lpa_iter', type=int, default=5, help='number of LPA iterations')
-parser.add_argument('--l2_weight', type=float, default=1e-4, help='weight of l2 regularization')
-parser.add_argument('--lpa_weight', type=float, default=10, help='weight of LP regularization')
-parser.add_argument('--dropout', type=float, default=0.2, help='dropout rate')
-parser.add_argument('--lr', type=float, default=0.05, help='learning rate')
-'''
+# parser.add_argument('--dataset', type=str, default='cora', help='which dataset to use')
+# parser.add_argument('--epochs', type=int, default=200, help='the number of epochs')
+# parser.add_argument('--dim', type=int, default=32, help='dimension of hidden layers')
+# parser.add_argument('--gcn_layer', type=int, default=5, help='number of GCN layers')
+# parser.add_argument('--lpa_iter', type=int, default=5, help='number of LPA iterations')
+# parser.add_argument('--l2_weight', type=float, default=1e-4, help='weight of l2 regularization')
+# parser.add_argument('--lpa_weight', type=float, default=10, help='weight of LP regularization')
+# parser.add_argument('--dropout', type=float, default=0.2, help='dropout rate')
+# parser.add_argument('--lr', type=float, default=0.05, help='learning rate')
+# '''
 
 # # citeseer
 parser.add_argument('--dataset', type=str, default='citeseer', help='which dataset to use')
