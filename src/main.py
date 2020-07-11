@@ -34,7 +34,7 @@ parser.add_argument('--lpa_iter', type=int, default=5, help='number of LPA itera
 parser.add_argument('--l2_weight', type=float, default=5e-4, help='weight of l2 regularization')
 parser.add_argument('--lpa_weight', type=float, default=1, help='weight of LP regularization')
 parser.add_argument('--dropout', type=float, default=0, help='dropout rate')
-parser.add_argument('--lr', type=float, default=0.2, help='learning rate')
+parser.add_argument('--lr', type=float, default=0.1, help='learning rate')
 
 '''
 # pubmed

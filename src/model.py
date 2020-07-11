@@ -38,7 +38,11 @@ class GCN_LPA(object):
         # self.adj_ = tf.sparse_to_dense(self.adj)
         # self.adj = tf.print(self.adj_.values, [self.adj_])
         self.normalized_adj = tf.sparse_softmax(self.adj)
-        self.adj_lpa = tf.SparseTensor(adj[0], adj[1], adj[2])
+        
+        boolean_mask = adj[0].T[0] == adj[0].T[1]
+        self.adj_lpa = tf.SparseTensor(adj[0].T[:,boolean_mask].T, adj[1][boolean_mask],adj[2])
+
+        # self.adj_lpa = tf.SparseTensor(adj[0], adj[1], adj[2])
         # tf.debugging.assert_non_positive(self.normalized_adj)
 
         self.vars.append(edge_weights)

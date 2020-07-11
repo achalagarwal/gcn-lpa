@@ -50,18 +50,20 @@ def train(args, data, batch_test=False):
             # train
             # _, train_loss, train_acc = sess.run(
             #     [model.optimizer, model.loss, model.accuracy,], feed_dict=get_feed_dict(train_mask, args.dropout))
-            merge = tf.summary.merge_all()
+            # merge = tf.summary.merge_all()
 
 
-            summary,_, _, lpa_label, gcn_label, lambdas, moments, train_loss, test_loss, val_loss, train_acc, val_acc, test_acc  = sess.run(
-                [merge, model.optimizer, model.loss,model.predicted_label, model.outputs, model.per_node_lambdas_1, model.moment, model.test_loss, model.train_loss, model.ver_loss, model.train_accuracy, model.test_accuracy, model.ver_accuracy], feed_dict=get_feed_dict(train_mask, val_mask, test_mask, args.dropout))
+            # summary,_, _, lpa_label, gcn_label, lambdas, moments, train_loss, test_loss, val_loss, train_acc, val_acc, test_acc  = sess.run(
+            #     [merge, model.optimizer, model.loss,model.predicted_label, model.outputs, model.per_node_lambdas_1, model.moment, model.test_loss, model.train_loss, model.ver_loss, model.train_accuracy, model.test_accuracy, model.ver_accuracy], feed_dict=get_feed_dict(train_mask, val_mask, test_mask, args.dropout))
+            _, _, gcn_label, train_loss, test_loss, val_loss, train_acc, val_acc, test_acc  = sess.run(
+                [model.optimizer, model.loss, model.outputs, model.test_loss, model.train_loss, model.ver_loss, model.train_accuracy, model.test_accuracy, model.ver_accuracy], feed_dict=get_feed_dict(train_mask, val_mask, test_mask, args.dropout))
             
-            train_writer.add_summary(summary, epoch)
+            # train_writer.add_summary(summary, epoch)
 
-            print(moments)
-            lpa_labels.append(lpa_label)
+            # print(moments)
+            # lpa_labels.append(lpa_label)
             gcn_labels.append(gcn_label)
-            lambdaz.append(lambdas)
+            # lambdaz.append(lambdas)
 
             # validation
             # val_loss, val_acc = sess.run([model.loss, model.accuracy], feed_dict=get_feed_dict(val_mask, 0.0))
@@ -83,7 +85,7 @@ def train(args, data, batch_test=False):
             return final_test_acc
         
         # pickle the three lists 
-        filename = './data_stored'
-        fileObject = open(filename, 'wb')
-        pickle.dump((lpa_labels,gcn_labels,lambdaz), fileObject)
-        fileObject.close()
+        # filename = './data_stored'
+        # fileObject = open(filename, 'wb')
+        # # pickle.dump((lpa_labels,gcn_labels,lambdaz), fileObject)
+        # fileObject.close()
