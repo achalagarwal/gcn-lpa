@@ -128,10 +128,10 @@ class GCN_LPA(object):
 
         # this should be masked_lambdas as the average would affect the loss
         # also, maybe it might be better to just clip instead of regualarizing
-        self.vars.append(self.per_node_lambdas_1)
+        self.vars.append(self.per_node_lambdas)
 
-        self.outputs = self.outputs * self.per_node_lambdas_1
-        self.predicted_label = tf.cast(self.predicted_label, dtype=tf.float64) * (1- self.per_node_lambdas_1)
+        self.outputs = self.outputs * self.per_node_lambdas
+        self.predicted_label = tf.cast(self.predicted_label, dtype=tf.float64) * (1- self.per_node_lambdas)
 
         self.final_outputs = self.outputs + self.predicted_label
 
@@ -170,14 +170,18 @@ class GCN_LPA(object):
         self.test_loss += self.reg_loss
         self.ver_loss += self.reg_loss
 
-        tf.summary.histogram("per_node_lambdas", self.per_node_lambdas_1)
-
+        tf.summary.histogram("per_node_lambdas", self.per_node_lambdas)
+        self.final_loss = self.loss + self.reg_loss
         # these operations should only take place in the training stage 
-        self.optimizer = tf.train.AdamOptimizer(learning_rate=self.args.lr).minimize(self.train_loss)
+        self.optimizer = tf.train.AdamOptimizer(learning_rate=self.args.lr).minimize(self.final_loss)
+        # self.optimizer = tf.train.AdamOptimizer(learning_rate=self.args.lr).minimize(self.train_loss)
+        # self.optimizer = tf.train.AdamOptimizer(learning_rate=self.args.lr).minimize(self.test_loss)
+        # self.optimizer = tf.train.AdamOptimizer(learning_rate=self.args.lr).minimize(self.ver_loss)
 
     def _build_eval(self):
         correct_prediction = tf.equal(tf.argmax(self.final_outputs, 1), tf.argmax(self.labels, 1))
         correct_prediction = tf.cast(correct_prediction, tf.float64)
+        # self.final_accuracy
         self.train_accuracy = tf.reduce_sum(correct_prediction * self.label_mask) / tf.reduce_sum(self.label_mask)
         self.ver_accuracy = tf.reduce_sum(correct_prediction * self.ver_label_mask) / tf.reduce_sum(self.ver_label_mask)
         self.test_accuracy = tf.reduce_sum(correct_prediction * self.test_label_mask) / tf.reduce_sum(self.test_label_mask)
